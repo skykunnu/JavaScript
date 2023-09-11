@@ -1,6 +1,6 @@
 // # Primitive 
 
-// 7 types : String, Number, Boolean, null, undefined, Symbol, BigInt
+// 7 types : String, Number, Boolean, null, undefined, Symbol, BigInt.
 
 const score = 100
 const scoreValue=100.3 // number
@@ -27,4 +27,15 @@ const myFunction=function(){
 
 }
 console.log(typeof bigNumber); // undefined.
-console.log(typeof myFunction); // function object. 
+console.log(typeof myFunction); // function object.
+//++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack(Primitive), Heap(Non-Primitive)
+// whenever we define variables in primitive datatypes, We get the copy of the variable in stack, whatever changes in the variable will reflect in the copied variable only.
+// whenever we define variables in Non-primitive datatypes, We get the (Referance)Original-value of the variable in Heap, whatever changes in the variable will reflect in the original variable only.  
+let mySchoolname="Shikhar"
+let anotherName=mySchoolname
+anotherName="Kunnu"
+
+console.log(mySchoolname);
+console.log(anotherName);
