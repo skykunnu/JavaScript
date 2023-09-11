@@ -11,4 +11,6 @@ that's why null >=0 is true and null>0 is false.
 // console.log(undefined>0); false
 // console.log(undefined<0); false
 
-//===
+//=== (Strict check)
+console.log("2"== 2); //true because equality operator change it a number. 
+console.log("2"===2); //false because strict equal don't change the datatype. 
