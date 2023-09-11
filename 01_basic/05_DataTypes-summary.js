@@ -26,8 +26,8 @@ const myFunction=function(){
     console.log("hello World");
 
 }
-console.log(typeof bigNumber); // undefined.
-console.log(typeof myFunction); // function object.
+// console.log(typeof bigNumber); // undefined.
+// console.log(typeof myFunction); // function object.
 //++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // Stack(Primitive), Heap(Non-Primitive)
@@ -37,5 +37,14 @@ let mySchoolname="Shikhar"
 let anotherName=mySchoolname
 anotherName="Kunnu"
 
-console.log(mySchoolname);
-console.log(anotherName);
+console.log(mySchoolname); // Shikhar
+console.log(anotherName); // Kunnu
+
+let userOne={
+    email:"user@gmail.com",
+    upi:"userbyl"
+}
+let userTwo=userOne
+userTwo.email="shikhar@google.com"
+console.log(userOne.email); // shihar@gmail.com 
+console.log(userTwo.email); // shikhar@gmail.com
