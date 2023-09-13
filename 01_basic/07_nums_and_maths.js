@@ -24,4 +24,11 @@ const hundreds=1000000
 // console.log(Math.min(2,3,4,5,9)); // return the min value.
 // console.log(Math.max(8,9,3,2)); // return the max value. 
 
-console.log(Math.random()); // returns the value between 0 and 1
+// console.log(Math.random()); // returns the value between 0 and 1.
+// console.log((Math.random()*10) + 1);
+// console.log(Math.floor(Math.random()*10) + 1);
+
+const min=1;
+const max=100;
+const formula= min+(max-min)*Math.random() // Formula to find the Random numbers between any two given number. If random function value is 0 then answer will be min value and if random function is 1 then answer will be max value.     
+// console.log(Math.floor(formula));
