@@ -24,6 +24,10 @@ console.log(JsUser.Email);
 console.log(JsUser["full name"]);
 console.log(JsUser[mySym]);
 
+// to overwrite the values of an object 
+JsUser.Email="shikhar@gmail.com"
+
+Object.freeze(JsUser ) // It freezes all the keys of an object. means you cannot change the keys of object. 
 
 
 
