@@ -17,6 +17,13 @@ const another_array=[1,2,3,[4,5,6],7,[6,7,[4,5]]]
 const real_another_array=another_array.flat(1)
 // console.log(real_another_array);
 
+// Three ways to form an array are-
+/*
+1. Array.isArray()
+2. Array.from()
+3. Array.of()
+*/
+
 console.log(Array.isArray("Shikhar"))
 console.log(Array.from(["Shikhar","Khandelwal"])) // convert anything like Strings,object into an array. 
 console.log(Array.from({name: "Shikhar"})); // it will return an empty array.As it is not able to convert it.  
