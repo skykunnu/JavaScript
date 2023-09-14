@@ -6,11 +6,30 @@
 
 // object literals
 
+const mySym=Symbol("key1")
 
 
 const JsUser={
     name: "Shikhar",
-    
+    "full name":"Shikhar Khandelwal",
+    [mySym]:"myKey1", // to use it as symbol put the variable in square brackets. 
+    age:22,
+    Location:"Jaipur",
+    Email:"shikharkhandelwal27@gmail.com",
+    isLoggedIn: false,
+    LastLoginDays:["Monday","Saturday"]
+};
 
-}
+console.log(JsUser.Email);
+console.log(JsUser["full name"]);
+console.log(JsUser[mySym]);
+
+
+
+
+
+
+
+
+
 
