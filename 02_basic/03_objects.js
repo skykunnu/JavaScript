@@ -20,16 +20,15 @@ const JsUser={
     LastLoginDays:["Monday","Saturday"]
 };
 
-console.log(JsUser.Email);
-console.log(JsUser["full name"]);
-console.log(JsUser[mySym]);
+// console.log(JsUser.Email);
+// console.log(JsUser["full name"]);
+// console.log(JsUser[mySym]);
 
 // to overwrite the values of an object 
 JsUser.Email="shikhar@gmail.com"
-
 Object.freeze(JsUser ) // It freezes all the keys of an object. means you cannot change the keys of object. 
-
-
+JsUser.Email="Shikhar25@gmail.com"
+// console.log(JsUser.Email);
 
 
 
