@@ -45,9 +45,9 @@ const users=[
 }
 ]
 users[1].email
-console.log(tinderUser);
-console.log(Object.keys(tinderUser)); // it returns the keys of tinderUser like- id,name,isLoggedIn.
-console.log(Object.values(tinderUser)); // it returns the value of keys of tinderUser. 
-console.log(Object.entries(tinderUser)); // it returns the key-value pairs in the array format. 
-console.log(tinderUser.hasOwnProperty('isLogged')); // it checks whether the object has this key or not. returns the answer in boolean. 
+// console.log(tinderUser);
+// console.log(Object.keys(tinderUser)); // it returns the keys of tinderUser like- id,name,isLoggedIn.
+// console.log(Object.values(tinderUser)); // it returns the value of keys of tinderUser. 
+// console.log(Object.entries(tinderUser)); // it returns the key-value pairs in the array format. 
+// console.log(tinderUser.hasOwnProperty('isLogged')); // it checks whether the object has this key or not. returns the answer in boolean. 
 
