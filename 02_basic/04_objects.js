@@ -21,13 +21,33 @@ const regularUser={   // object nested in another object.
 
 const obj1={1: "a", 2: "b"}
 const obj2={3: "a", 4: "b"}
+const obj3={5: "a", 6: "b"}
+
 
 // const obj3={ obj1, obj2}
-const obj3=Object.assign(obj1,obj2)
-console.log(obj3);
+// const obj4=Object.assign({},obj1,obj2,obj3) // {}- this represents as target and rest all are sources. object.assign(target,source) works in this fashion. 
+const obj4={... obj1,...obj2,...obj3} // spread operator can also be used to represent multiple object into one single object. 
+// console.log(obj4);
 
-
-
-
-
+// syntax to used whenever you get values fromn databases. It comes in the fashion of arrays of objects. 
+const users=[
+{
+ id: 1,
+ email: "sh@gmail.com"
+},
+{
+    id: 1,
+ email: "hk@gmail.com"
+},
+{
+    id: 1,
+ email: "hg@gmail.com"
+}
+]
+users[1].email
+console.log(tinderUser);
+console.log(Object.keys(tinderUser)); // it returns the keys of tinderUser like- id,name,isLoggedIn.
+console.log(Object.values(tinderUser)); // it returns the value of keys of tinderUser. 
+console.log(Object.entries(tinderUser)); // it returns the key-value pairs in the array format. 
+console.log(tinderUser.hasOwnProperty('isLogged')); // it checks whether the object has this key or not. returns the answer in boolean. 
 
