@@ -26,12 +26,19 @@ const JsUser={
 
 // to overwrite the values of an object 
 JsUser.Email="shikhar@gmail.com"
-Object.freeze(JsUser ) // It freezes all the keys of an object. means you cannot change the keys of object. 
+// Object.freeze(JsUser ) // It freezes all the keys of an object. means you cannot change the keys of object. 
 JsUser.Email="Shikhar25@gmail.com"
 // console.log(JsUser.Email);
 
+JsUser.greeting=function(){
+    console.log("Hello JS Users.");
+}
+JsUser.greetingTwo=function(){
+    console.log(`Hello JS Users, ${this.name}`);
+}
 
-
+// console.log(JsUser.greeting());
+// console.log(JsUser.greetingTwo());
 
 
 
