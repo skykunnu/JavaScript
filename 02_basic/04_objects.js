@@ -61,3 +61,11 @@ const course={
 }
 const {courseInstructor: Instructor}=course // first object is assigned as value and one of the keys keyname is changed to something else. this change is called as destructuring. 
 console.log(Instructor);
+
+// JSON Syntax
+/* it is a JSON Syntax in which key and values both are Strings except value being number.*/ 
+// {
+// "name": "Shikhar",
+// "coursename": "JavaScript",
+// "Price":"free" 
+// }
