@@ -51,3 +51,13 @@ users[1].email
 // console.log(Object.entries(tinderUser)); // it returns the key-value pairs in the array format. 
 // console.log(tinderUser.hasOwnProperty('isLogged')); // it checks whether the object has this key or not. returns the answer in boolean. 
 
+// Destructuring
+/* This is the way to destructure an object.*/
+
+const course={
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor: "Shikhar"
+}
+const {courseInstructor: Instructor}=course // first object is assigned as value and one of the keys keyname is changed to something else. this change is called as destructuring. 
+console.log(Instructor);
