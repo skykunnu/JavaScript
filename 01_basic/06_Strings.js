@@ -17,7 +17,7 @@ const newString=gameName.substring(0, 4)
 // console.log(newString);
 
 const anotherString=gameName.slice(2,4) // it will print the value from (a,b-1).
-// console.log(anotherString);
+// console.log(anotherString); // ik 
 // const newStringOne="   Shikhar   "
 // console.log(newStringOne);
 // console.log(newStringOne.trim()); 
