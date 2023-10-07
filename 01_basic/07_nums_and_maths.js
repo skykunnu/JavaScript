@@ -8,7 +8,7 @@ const balance=new Number(100)
 // console.log(balance.toFixed(2));
 
 const otherNumber=128.4966
-//The funda behind the precision is that start the count from extreme left. like for Ex the precision is 3 , so will start count from left and stop after the count of 3 and will check the value after count is greater than or equal to 5 or less than 5. if more will add +1 to previous value and if less will return as it.  
+//The funda behind the precision is that start counting from the extreme left. like for Ex let's say the precision is 3, so will start counting from the left and stop until the count reaches 3, and after that will check whether the value after counting is greater than equal to 5 or less than 5. if it is more will add +1 to the previous value and if it is less will return as it is.  
 // console.log(otherNumber.toPrecision(6)); // 128.497
 
 const hundreds=1000000
