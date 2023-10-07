@@ -13,7 +13,7 @@ const gameName=new String('Shikhar-Jagdish-Khandelwal') //
 // console.log(gameName.indexOf('a'));
 
 
-const newString=gameName.substring(0, 4)
+const newString=gameName.substring(0, 4) // it will the print the value from 0 to n-1.
 // console.log(newString);
 
 const anotherString=gameName.slice(2,4) // it will print the value from (a,b-1).
