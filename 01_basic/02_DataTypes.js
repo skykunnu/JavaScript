@@ -6,7 +6,10 @@ let age = 18;
 let isLoggedIn = false;
 
 //number => 2 to power 53
-//bigint
+//bigint ,!! You cannot mix bigint with other datatypes.
+let myNumber = BigInt(22); // this is also a bigInt.
+myNumber = 12n; // this is also bigInt.
+console.log(Number.MAX_SAFE_INTEGER); // this gives the max range of BigInt.
 // string=> ""
 //boolean => true/false
 //null => standalone value/empty value.
