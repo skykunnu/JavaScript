@@ -16,6 +16,18 @@ console.log(myArr.includes(3)); // returns boolean value based on the existence 
 
 const newArr = myArr.join(); // converts the array into string rest all is same.
 
+let array1 = ["1", "2", "3"];
+// let array2 = ["1", "2", "3"];
+// let array2 = array1.slice(0); !! new way of cloning one array to another by just slicing it from the index value you want to clone it.
+// let array2 = [].concat(array1); !! another way to clone an array to new one.
+
+// Spread Operator
+// let array2 = [...array1]; !! most commonly used way to clone an array.
+
+// console.log(array1 === array2); // false, because triple equal to operator checks only reference(Pointing to same memory location)equality not the content equality. both are pointing to different memory location.
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 // slice and splice.
 
 console.log("A ", myArr);
