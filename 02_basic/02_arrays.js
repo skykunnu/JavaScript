@@ -38,3 +38,11 @@ let score1 = 100;
 let score2 = 200;
 let score3 = 300;
 console.log(Array.of(score1, score2, score3)); // returns a new array with set of elements passed as an argument in the function.
+
+// ==================================================================================================================================
+
+// Array Destructuring
+const myArray = ["value1", "value2"];
+let [myvar1, myvar2] = myArray; // way of storing elements of one array to another variable. myvar1= 0th index element, myvar2=1st index element.
+console.log(myvar1);
+console.log(myvar2);
