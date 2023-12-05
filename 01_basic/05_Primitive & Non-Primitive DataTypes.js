@@ -8,10 +8,11 @@ let userEmail;
 
 const id = Symbol("123");
 const anotherid = Symbol("123");
-// console.log(id===anotherid); false although given values are same to both because symbol makes the value unique.
+// console.log(id===anotherid); false although given values are same to same because symbol makes the value unique.
 
 // const bigNumber=23456789122334n // big int
-//----------------------------------------------------------
+//---------------------------------------------------------------------------------------------------------------------
+
 // Reference (Non Primitive)
 // The return type of all the non primitive datatypes are object.
 // Array, Objects, Functions
@@ -30,8 +31,10 @@ const myFunction = function () {
 //++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // Stack(Primitive), Heap(Non-Primitive)
-//Whenever we define variables in primitive datatypes, We get the copy of the variable in a stack, whatever changes in the variable will reflect in the copied variable only not in the original value.
-//Whenever we define variables in Non-primitive datatypes, We get the (Reference)Original-value of the variable in Heap, whatever changes in the variable will reflect in the original variable only.
+
+//Whenever we define variables in primitive datatypes, We get the copy of the variable in a stack, whatever changes in the original variable will reflect in the original variable only. not in the copied variable.
+
+//Whenever we define variables in Non-primitive(Reference) datatypes, We get the (Reference)Original-value of the variable in Heap, whatever changes in the original variable will reflect in the original variable and as well as copied variable also.
 let mySchoolname = "Shikhar";
 let anotherName = mySchoolname;
 anotherName = "Kunnu";
