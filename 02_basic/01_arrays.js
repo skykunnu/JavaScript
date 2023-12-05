@@ -26,6 +26,11 @@ let array1 = ["1", "2", "3"];
 
 // console.log(array1 === array2); // false, because triple equal to operator checks only reference(Pointing to same memory location)equality not the content equality. both are pointing to different memory location.
 
+// concatination of two array
+let array3 = ["1", "2", "3"];
+let array4 = ["4", "5", "6"];
+let array5 = array3.concat(array4);
+console.log(array5); // ['1','2','3','4','5','6'];
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // slice and splice.
