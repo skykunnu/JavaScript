@@ -3,7 +3,6 @@ Objects- (Reference type or Non-Primitive)
 -> Objects store key value pair.
 -> Objects don't have index
 */
-
 // singleton
 
 //   1. whenever we declare object with literals then no singleton is formed.
