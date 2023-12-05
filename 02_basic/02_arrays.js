@@ -45,6 +45,6 @@ console.log(Array.of(score1, score2, score3)); // returns a new array with set o
 const myArray = ["value1", "value2", "value3", "value4"];
 let [myvar1, myvar2, ...myArray2] = myArray; // way of storing elements of one array to another variable. myvar1= 0th index element, myvar2=1st index element.
 
-console.log(myvar1);
-console.log(myvar2);
-console.log(myArray2); // spread operator is used to create a new array. so therefore remaining elements of myArray copied into new array myArray2.
+console.log(myvar1); // ("value1");
+console.log(myvar2); // ("value2");
+console.log(myArray2); // spread operator is used to create a new array. so therefore remaining elements of myArray copied into new array myArray2. ['value3','value4'].
