@@ -53,5 +53,5 @@ console.log(userTwo.email); // shikhar@gmail.com
 
 let array1 = ["1", "2", "3"];
 // let array2 = ["1", "2", "3"];
-let array2 = array1.slice(0);
+let array2 = array1.slice(0); // new way of cloning one array to another by just slicing it from the index value you want to clone it.
 console.log(array1 === array2); // false, because triple equal to operator checks only reference(Pointing to same memory location)equality not the content equality. both are pointing to different memory location.
