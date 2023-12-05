@@ -28,13 +28,13 @@ const myFunction = function () {
 };
 // console.log(typeof bigNumber); // undefined.
 // console.log(typeof myFunction); // function object.
-//++++++++++++++++++++++++++++++++++++++++++++++++++++
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // Stack(Primitive), Heap(Non-Primitive)
 
 //Whenever we define variables in primitive datatypes, We get the copy of the variable in a stack, whatever changes in the original variable will reflect in the original variable only. not in the copied variable.
 
-//Whenever we define variables in Non-primitive(Reference) datatypes, We get the (Reference)Original-value of the variable in Heap, whatever changes in the original variable will reflect in the original variable and as well as copied variable also.
+//Whenever we define variables in Non-primitive(Reference) datatypes, We get the (Reference)Original-value of the variable in Heap, whatever changes in the original variable will reflects in the original as well as copied variable also.
 let mySchoolname = "Shikhar";
 let anotherName = mySchoolname;
 anotherName = "Kunnu";
@@ -50,3 +50,8 @@ let userTwo = userOne;
 userTwo.email = "shikhar@google.com";
 console.log(userOne.email); // shihar@gmail.com
 console.log(userTwo.email); // shikhar@gmail.com
+
+let array1 = ["1", "2", "3"];
+// let array2 = ["1", "2", "3"];
+let array2 = array1.slice(0);
+console.log(array1 === array2); // false, because triple equal to operator checks only reference(Pointing to same memory location)equality not the content equality. both are pointing to different memory location.
