@@ -43,7 +43,7 @@ console.log(Array.of(score1, score2, score3)); // returns a new array with set o
 
 // Array Destructuring
 const myArray = ["value1", "value2", "value3", "value4"];
-let [myvar1, myvar2, ...myArray2] = myArray; // way of storing elements of one array to another variable. myvar1= 0th index element, myvar2=1st index element.
+let [myvar1, myvar2, ...myArray2] = myArray; // way of storing elements of one array to another variable. myvar1= 0th index element, myvar2=1st index element and so on.
 
 console.log(myvar1); // ("value1");
 console.log(myvar2); // ("value2");
