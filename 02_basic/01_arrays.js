@@ -57,10 +57,14 @@ for (let fruit of fruits) {
 }
 console.log(fruit2);
 
+// =================================================================================================================
+
 // For in loop in array
 const cars = ["BMW", "Mercedes", "Audi", "Rolls Royce"];
 const cars2 = [];
 for (let car in cars) {
-  console.log(car); // this will return the index value of each of the element.
-  console.log(cars[car]); // this will return the elements of the array.
+  cars2.push(cars[car]);
+  // console.log(car); // this will return the index value of each of the element.
+  // console.log(cars[car]); // this will return the elements of the array.
 }
+// console.log(cars2);
