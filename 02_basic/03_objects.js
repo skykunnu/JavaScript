@@ -10,10 +10,20 @@ Objects- (Reference type or Non-Primitive)
 //   2. when declare with constructor then singleton is formed.
 //  object.create- declaration of object using constructor method.
 
-// object literals
 const person = {
   name: "Shikhar",
   age: 22,
   hobbies: ["Playing Cricket", "Listening to music", "Reading about GK"],
 };
-console.log(person.hobbies);
+// console.log(person.hobbies);--> ["Playing Cricket", "Listening to music", "Reading about GK"]--> it is a dot notation.
+// or console.log(person["hobbies"])--> it is a bracket notation
+/* How to add a new key value pair to objects */
+person["gender"] = "Male"; // or Person.gender="Male".
+console.log(person); // Whole elements of the object will be printed out.
+
+/* Difference between dot and bracket notation. */
+const person = {
+  name: "Shikhar",
+  age: 22,
+  hobbies: ["Playing Cricket", "Listening to music", "Reading about GK"],
+};
