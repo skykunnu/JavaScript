@@ -40,7 +40,27 @@ console.log("A ", myArr);
 const myn1 = myArr.slice(1, 3); // prints the index value 1 and 2 not 3. It does'nt modify the original array.
 console.log(myn1);
 
+// Splice modifies the original array.
 const originalArray = [1, 2, 3, 4, 5];
 originalArray.splice(1, 2); // Removes 2 elements starting at index 1: [1, 4, 5]
 originalArray.splice(2, 0, 6, 7); // Inserts 6 and 7 at index 2: [1, 4, 6, 7, 5]
-// Splice modifies the original array.
+
+// ================================================================================================================
+
+// For of loop in array
+
+const fruits = ["Apple", "Orange", "banana", "Guava"];
+const fruit2 = [];
+for (let fruit of fruits) {
+  // format --> for(let anyname of arrayname).
+  fruit2.push(fruit);
+}
+console.log(fruit2);
+
+// For in loop in array
+const cars = ["BMW", "Mercedes", "Audi", "Rolls Royce"];
+const cars2 = [];
+for (let car in cars) {
+  console.log(car); // this will return the index value of each of the element.
+  console.log(cars[car]); // this will return the elements of the array.
+}
