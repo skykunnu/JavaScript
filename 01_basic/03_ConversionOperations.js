@@ -35,8 +35,8 @@ let str_2="Khandelwal"
 // console.log(1+2 + "2");  // 32 because "+" operator is left associative means it is calc from left to right. (1+2) took place and then type coerced was done. 
 // console.log(1+2); // 3
 // console.log(+"");  // 0 , because empty string is coerced into number. 
-// console.log("1"-"1"-"1"-2); // -3 because the "-" operator converts a string to num and type coercion takes place from left to right. 
-// console.log(+"Hello"); // 
+// console.log("1"-"1"-"1"-2); // -3 because the "-" operator (converts a string to num) and type coercion takes place from left to right. 
+// console.log(+"Hello"); // Nan, because the Unary operator converts the operand into num. if an invalid num is there, then it outputs Not a Number (Nan). 
 let num1,num2,num3
 num1=num2=num3=2+2
 let game=100
