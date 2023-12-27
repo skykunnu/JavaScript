@@ -31,11 +31,12 @@ let str_1="Shikhar"
 let str_2="Khandelwal"
 // console.log(str_1+str_2);
 
-// console.log("1"+2 + 2); // 122 because "+" operator will first type coerce the left operand then next and so on.  
+// console.log("1"+2 + 2); // 122 because "+" operator will first type coerce(Converts number to string)the left operand then next and so on.  
 // console.log(1+2 + "2");  // 32 because "+" operator is left associative means it is calc from left to right. (1+2) took place and then type coerced was done. 
-// console.log(1+2);
-// console.log(+"");
+// console.log(1+2); // 3
+// console.log(+"");  // 0 , because empty string is coerced into number. 
 // console.log("1"-"1"-"1"-2); // -3 because the "-" operator converts a string to num and type coercion takes place from left to right. 
+// console.log(+"Hello"); // 
 let num1,num2,num3
 num1=num2=num3=2+2
 let game=100
