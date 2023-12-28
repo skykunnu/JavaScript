@@ -1,5 +1,5 @@
 let myDate=new Date()
-// following below are Date Stamps.
+//  The following below are Date Stamps.
 
 // console.log(myDate.toString());
 // console.log(myDate.toDateString());
