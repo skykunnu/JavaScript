@@ -52,7 +52,7 @@ console.log(originalArray.splice(2, 0, 6, 7)); // Remove 0 element before 2 and 
 const fruits = ["Apple", "Orange", "banana", "Guava"];
 const fruit2 = [];
 for (let fruit of fruits) {
-  // format --> for(let (anyname) of {arrayname}). --> ()-> means it can contain any name. {}-> means only name of the array will be used.
+  // format --> for(let (anyname-for ex fruit,vegetables etc) of {arrayname-> only name with which the array is initialized.}). --> ()-> means it can contain any name. {}-> means only name of the array will be used.
   fruit2.push(fruit);
 }
 console.log(fruit2);
