@@ -42,8 +42,8 @@ console.log(myn1);
 
 // Splice modifies the original array.
 const originalArray = [1, 2, 3, 4, 5];
-originalArray.splice(1, 2); // Remove 2 elements, starting from index 1: [1, 4, 5]
-originalArray.splice(2, 0, 6, 7); // Remove 0 element before 2 and add 6 and 7: [1, 4, 6, 7, 5]
+console.log(originalArray.splice(1, 2)); // Remove 2 elements, starting from index 1: [1, 4, 5]
+console.log(originalArray.splice(2, 0, 6, 7)); // Remove 0 element before 2 and add 6 and 7: [1, 4, 6, 7, 5]
 
 // ================================================================================================================
 
