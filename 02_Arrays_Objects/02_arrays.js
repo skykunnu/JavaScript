@@ -18,9 +18,9 @@ marvel_heroes.push(dc);
 const all_new_heroes = [...marvel_heroes, ...dc];
 // console.log(all_new_heroes); ["thor", "Ironman", "Spiderman","Superman", "flash", "batman"];
 
-// flat( depth- means upto how many lines you want your array to be printed.) function combines all the subarray into one and return it to a new array.
+// flat( depth- means upto how many lines you want your array to be printed.) function combines all the subarray into one and return it to a new array. also can be used to remove the empty spaces in array.
 const another_array = [1, 2, 3, [4, 5, 6], 7, [6, 7, [4, 5]]];
-const real_another_array = another_array.flat(1);
+const real_another_array = another_array.flat(2);
 console.log(real_another_array);
 
 // Three ways to form an array are-
