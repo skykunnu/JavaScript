@@ -12,11 +12,11 @@ marvel_heroes.push(dc);
 // concat function add two arrays and return them into a new array.
 
 // const allHeroes=marvel_heroes.concat(dc)
-// console.log(allHeroes);
+// console.log(allHeroes); -> ["thor", "Ironman", "Spiderman","Superman", "flash", "batman"];
 
 // spread operator(...)- another way to add two different arrays into one.
 const all_new_heroes = [...marvel_heroes, ...dc];
-// console.log(all_new_heroes);
+// console.log(all_new_heroes); ["thor", "Ironman", "Spiderman","Superman", "flash", "batman"];
 
 // flat( depth- means upto how many lines you want your array to be printed.) function combines all the subarray into one and return it to a new array.
 const another_array = [1, 2, 3, [4, 5, 6], 7, [6, 7, [4, 5]]];
