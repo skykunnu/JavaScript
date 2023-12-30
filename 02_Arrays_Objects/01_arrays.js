@@ -16,9 +16,11 @@ console.log(myArr.includes(3)); // returns boolean value based on the existence 
 
 const newArr = myArr.join(); // converts the array into string rest all is same.
 
+// how to clone an array.
 let array1 = ["1", "2", "3"];
-// let array2 = ["1", "2", "3"];
-// let array2 = array1.slice(0); !! new way of cloning one array to another by just slicing it from the index value you want to clone it.
+let array2 = ["1", "2", "3"];
+// let array6 = array1.slice(0); // !! new way of cloning one array to another by just slicing it from the index value you want to clone it.
+// console.log(array6);
 // let array2 = [].concat(array1); !! another way to clone an array to new one.
 
 // Spread Operator
@@ -35,7 +37,7 @@ console.log(array5); // ['1','2','3','4','5','6'];
 
 // slice and splice.
 
-const myn1 = myArr.slice(1, 3); // prints the index value 1 and 2 not 3. It does'nt modify the original array.
+const myn1 = myArr.slice(1, 3); // prints the index value 1 and 2 not 3. It doesn't modify the original array.
 console.log(myn1);
 
 // Splice modifies the original array.
