@@ -30,14 +30,14 @@ console.log(real_another_array);
 3. Array.of()
 */
 
-console.log(Array.isArray("Shikhar"));
-console.log(Array.from(["Shikhar", "Khandelwal"])); // convert anything like Strings,object into an array.
-console.log(Array.from({ name: "Shikhar" })); // it will return an empty array.As it is not able to convert it.
+// console.log(Array.isArray("Shikhar"));
+// console.log(Array.from(["Shikhar", "Khandelwal"])); // convert anything like Strings,object into an array.
+// console.log(Array.from({ name: "Shikhar" })); // it will return an empty array.As it is not able to convert it.
 
 let score1 = 100;
 let score2 = 200;
 let score3 = 300;
-console.log(Array.of(score1, score2, score3)); // returns a new array with set of elements passed as an argument in the function.
+// console.log(Array.of(score1, score2, score3)); // returns a new array with set of elements passed as an argument in the function.
 
 // ==================================================================================================================================
 
