@@ -21,7 +21,7 @@ const all_new_heroes = [...marvel_heroes, ...dc];
 // flat( depth- means upto how many lines you want your array to be printed.) function combines all the subarray into one and return it to a new array.
 const another_array = [1, 2, 3, [4, 5, 6], 7, [6, 7, [4, 5]]];
 const real_another_array = another_array.flat(1);
-// console.log(real_another_array);
+console.log(real_another_array);
 
 // Three ways to form an array are-
 /*
