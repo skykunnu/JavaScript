@@ -18,3 +18,17 @@ console.log("2" === 2); //false because strict equal don't change the datatype.
 // != vs !==
 console.log("7" != 7); // false, because as both of them have same values. No matter whatever the datatype is.
 console.log("7" !== 7); // true, because it checked the datatypes of both the value and found it different.
+
+//-----------Truthy & Falsy Values---------------------------
+
+// Falsy Values-
+/*
+1. false
+2. " " -> Empty String.
+3. null
+4. undefined
+5. 0
+*/
+
+// Truthy Values-
+/* Other than Falsy values all are truthy values. */
