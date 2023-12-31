@@ -36,9 +36,9 @@ console.log(array5); // ['1','2','3','4','5','6'];
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // slice and splice.
-
-const myn1 = myArr.slice(1, 3); // prints the index value 1 and 2 not 3. It doesn't modify the original array.
-console.log(myn1);
+// It doesn't modify the original array.
+const myn1 = myArr.slice(1, 3); // prints the index value 1 and 2 not 3.
+console.log(myn1); // [1,2]
 
 // Splice modifies the original array.
 const originalArray = [1, 2, 3, 4, 5];
