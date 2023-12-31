@@ -44,7 +44,3 @@ const obj2 = {
 
 const newObject = { ...obj1, ...obj2, key6: "value-6" }; // new key is added along with objects.
 // console.log(newObject);
-
-let currentDate = new Date();
-console.log(currentDate.toLocaleTimeString());
-console.log(currentDate.toLocaleDateString());
