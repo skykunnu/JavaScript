@@ -25,7 +25,7 @@ console.log(real_another_array); // [1, 2, 3, 4, 5, 6, 7, 6, 7, 4, 5]
 
 // Three ways to form an array are-
 /*
-1. Array.isArray()
+1. Array.isArray() // To check whether something is array or not. 
 2. Array.from()
 3. Array.of()
 */
