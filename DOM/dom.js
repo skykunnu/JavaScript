@@ -24,3 +24,6 @@ btn.addEventListener("click", function () {
 
 //-------------------------------------------------------------------------------------
 /* Selecting a multiple events at a same time. */
+
+// var h = document.querySelectorAll("h1");
+// console.log(h);
