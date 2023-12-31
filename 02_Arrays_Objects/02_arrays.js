@@ -43,8 +43,9 @@ let score3 = 300;
 
 // Array Destructuring
 const myArray = ["value1", "value2", "value3", "value4"];
-let [myvar1, myvar2, ...myArray2] = myArray; // way of storing elements of one array to another variable. myvar1= 0th index element, myvar2=1st index element and so on.
-
-console.log(myvar1); // ("value1");
-console.log(myvar2); // ("value2");
+let [myvar1, myvar2, ...myArray2] = myArray; // way of storing elements of an array to another variables. myvar1= 0th index element, myvar2=1st index element and so on and they will behave like a normal variable.
+myvar1 = "Shikhar";
+myvar2 = "Khandelwal";
+console.log(myvar1); // ("value1") or Shikhar;
+console.log(myvar2); // ("value2") or Khandelwal;
 console.log(myArray2); // spread operator is used to create a new array. so therefore remaining elements of myArray copied into new array myArray2. ['value3','value4'].
