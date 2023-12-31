@@ -3,13 +3,13 @@ let myDate = new Date();
 
 // console.log(myDate.toString());
 // console.log(myDate.toDateString());
-// console.log(myDate.toLocaleDateString());
+// console.log(myDate.toLocaleDateString()); --> it will give current date in (dd/mm/yy) format.
 // console.log(myDate.toLocaleString());
 // console.log(myDate.toISOString());
 // console.log(myDate.toJSON());
 
 /* Time Stamps*/
-console.log(myDate.toLocaleTimeString());
+// console.log(myDate.toLocaleTimeString()); --> it will give current time in (HH/mm/ss).
 
 let myCreatedDate = new Date(2023, 0, 23); // (YY,MM,DD) and also In JS Month starts from 0.
 // console.log(myCreatedDate.toDateString());
