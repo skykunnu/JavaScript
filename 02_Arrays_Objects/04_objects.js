@@ -13,3 +13,5 @@ const Person = {
 for (let person in Person) {
   console.log(Person[person]);
 }
+
+// Object.keys
