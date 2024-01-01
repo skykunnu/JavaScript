@@ -13,9 +13,7 @@
 function isEven(Number) {
   if (Number % 2 === 0) {
     return true;
-  } else {
-    return false;
   }
+  return false;
 }
-const Ans = isEven(11);
-console.log(Ans);
+console.log(isEven(11));
