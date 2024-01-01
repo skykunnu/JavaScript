@@ -1,20 +1,15 @@
 /* Function Declaration */
 
-/* function singHappyBirthday() {
+function singHappyBirthday() {
   console.log("Happy Birthday to you");
 }
-singHappyBirthday();
-*/
+// singHappyBirthday();
 
-//-------------------------------------------------------------------------------------------------------------
-
-/* function sumTwoNumbers(a, b) {
+function sumTwoNumbers(a, b) {
   return a + b;
 }
 const returnValue = sumTwoNumbers(4, 9);
-console.log(returnValue);
-*/
-//-------------------------------------------------------------------------------------------------------------
+// console.log(returnValue);
 
 /* Function to check whether a Num is Even or odd. */
 function isEven(Number) {
@@ -22,7 +17,6 @@ function isEven(Number) {
 }
 // console.log(isEven(13));
 
-//-----------------------------------------------------------------------------------------------------------
 function String(anyString) {
   return anyString.slice(0, 1);
 }
