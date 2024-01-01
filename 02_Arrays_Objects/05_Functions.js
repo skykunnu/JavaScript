@@ -10,3 +10,12 @@
 // console.log(returnValue);
 
 //------------------------------------------------------------------------
+function isEven(Number) {
+  if (Number % 2 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+const Ans = isEven(11);
+console.log(Ans);
