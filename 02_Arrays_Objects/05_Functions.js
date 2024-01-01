@@ -26,6 +26,7 @@ function String(anyString) {
 /* Function Expression */
 
 const singHappyBirthday = function () {
+  // here function does'nt hold any name, the variable name is the function name.
   console.log("Happy Birthday to you !!");
 };
 
