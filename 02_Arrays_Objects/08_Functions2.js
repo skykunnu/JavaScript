@@ -14,12 +14,11 @@ function app() {
 // app();
 //-------------------------------------------------------------
 
-// Lexical Scope
+// Lexical Scope- means the Environment where the function is defined.
+const myVar = "value1";
 function myApp() {
-  const myVar = "value1";
-
   function myFunc() {
-    const myVar = "value59";
+    // const myVar = "value59";
     console.log("inside myFunc", myVar);
   }
 
