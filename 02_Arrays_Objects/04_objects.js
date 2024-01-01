@@ -73,7 +73,7 @@ const [{ firstName }, , { Gender }] = Users; // here we have rename the 0th inde
 // let say if you want to change the name of firstName to userFirstName, Simply use FirstName: userFirstName.
 console.log(firstName, Gender); // It will print the firstName of 0th index and Gender of 2nd index.
 //------------------------------------------------------------------------------------------------------------
-/* Objects inside array --> Useful in Real-life Applications */
+/* Objects inside an array --> Useful in Real-life Applications */
 const users = [
   { userId: 1, firstName: "Shikhar", Gender: "Male" },
   { userId: 2, firstName: "Prakhar", Gender: "Male" },
