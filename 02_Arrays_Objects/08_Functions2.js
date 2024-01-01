@@ -14,12 +14,14 @@ function app() {
 // app();
 //-------------------------------------------------------------
 
-// Lexical Scope- means the Environment where the function is defined.
+// Lexical Scope- means the lexical Environment where the function is defined.
 const myVar = "value1";
 function myApp() {
+  // myApp Lexical environment is outside environment where it is defined.
   function myFunc() {
+    // myFunc lexical environment is myApp().
     // const myVar = "value59";
-    console.log("inside myFunc", myVar);
+    console.log("inside myFunc", myVar); // myVar=1 bcoz of lexical scope method or it will check the nearest value of myVar.
   }
 
   console.log(myVar);
