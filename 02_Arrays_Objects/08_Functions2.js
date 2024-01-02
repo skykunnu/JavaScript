@@ -27,4 +27,34 @@ function myApp() {
   console.log(myVar);
   myFunc();
 }
-myApp();
+// myApp();
+//------------------------------------------------------------
+/* block scope vs function scope */
+
+// let and const are block scope while var is function scope.
+
+// Although they have same variable name but their scoping is different. So that's why there is no error.
+{
+  let firstName = "Harshit";
+  // console.log(firstName);
+}
+{
+  let firstName = "Shikhar";
+  // console.log(firstName);
+}
+
+// Using var you can print from outside the function, as var consider whole file as function scope.
+{
+  var firstName = "Dikshant";
+}
+// console.log(firstName);
+
+//-------------------------------------------------------------
+
+// rest Parameters
+
+function myFunc(a, b, ...c) {
+  console.log(`a is ${a}`);
+  console.log(`b is ${b}`);
+  console.log(`c is ${c}`);
+}
