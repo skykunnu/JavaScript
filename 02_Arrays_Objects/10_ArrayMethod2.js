@@ -53,4 +53,6 @@ const ans1 = numbers.some((numbers) => numbers % 2 === 0);
 // It does modify the original array.
 const myArray1 = [1, 2, 3, 4, 5, 6, 7, 8];
 myArray1.fill(0, 2, 5); // first is value to be filled at the start place and end place(not included--> (end-1)th index).
-console.log(myArray1);
+// console.log(myArray1); [1, 2, 0, 0, 0, 6, 7, 8]
+
+//--------------------------------------------------------------
