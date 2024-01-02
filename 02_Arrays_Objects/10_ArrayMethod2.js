@@ -29,7 +29,7 @@ console.log(ans); // it will only print the first occurence word which is of len
 
 // Every method
 const Numbers = [2, 4, 6, 8, 10];
-Numbers.every((number) => number % 2 === 0);
-
+const Ans = Numbers.every((number) => number % 2 === 0);
+console.log(Ans); // true as all elements are even.
 // callback function ---> boolean
 // every method ---> boolean (it will return true if all numbers of the array is even, if any one of them turns out be odd it will print false.) * Subject to condition.
