@@ -12,7 +12,7 @@ function app() {
   console.log(mul(3, 3));
 }
 // app();
-//-------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------------------------
 
 // Lexical Scope- means the lexical Environment where the function is defined.
 const myVar = "value1";
@@ -28,7 +28,7 @@ function myApp() {
   myFunc();
 }
 // myApp();
-//------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------------
 /* block scope vs function scope */
 
 // let and const are block scope while var is function scope.
@@ -49,7 +49,7 @@ function myApp() {
 }
 // console.log(firstName);
 
-//-------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------------
 
 // rest Parameters
 
@@ -70,4 +70,20 @@ function addAll(...numbers) {
   return total;
 }
 const ans = addAll(2, 3, 4, 5, 6, 7, 8);
-console.log(ans);
+// console.log(ans);
+
+//-------------------------------------------------------------------------------------------------------------------------
+/* Parameter Destructuring */
+// Mostly used with object and heavily in react.
+
+const person = {
+  firstName: "harshit",
+  gender: "male",
+};
+
+function printDetails(obj) {
+  /* It is nothing but's a  function calling object*/
+  console.log(obj.firstName);
+  console.log(obj.gender);
+}
+printDetails(person);
