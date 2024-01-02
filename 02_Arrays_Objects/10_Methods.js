@@ -9,3 +9,7 @@ number.sort();
 const userName = ["shikhar", "harshit", "yash", "prakhar"];
 userName.sort();
 console.log(userName); // [ 'harshit', 'prakhar', 'shikhar', 'yash' ] Sort according to alphabetical order.
+
+//------------------------------------------------------------------------------------------------------------------------
+
+// Find method
