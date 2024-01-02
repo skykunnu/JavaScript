@@ -95,11 +95,15 @@ function printDetails({ firstName, gender }) {
 }
 // printDetails(person);
 //-------------------------------------------------------------------
-// Callback function.
-function myFunc(a) {
-  a();
+// Callback function --> function mein as a input accept karke call karney ko hi callback function bolte hain.
+function myFunc(callback) {
+  /* now callback(notation to write, whenever callback func has to be used) is assigned with function,means function as a input accept kiya. */
+  console.log(callback); // this will print the whole function.
+  callback("Shikhar"); // here function is called, this process is known as callback function.
 }
-function myFunc2() {
+function myFunc2(name) {
   console.log("inside my func2");
+  console.log(`your name is ${name}`); // As we have not passed the name, so therefore the output will be undefined.
 }
-myFunc(myFunc2); // passed function as an argument.
+// myFunc(myFunc2); // passed function as an argument.
+//--------------------------------------------------------------------
