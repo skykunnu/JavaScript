@@ -99,11 +99,25 @@ function printDetails({ firstName, gender }) {
 function myFunc(callback) {
   /* now callback(notation to write, whenever callback func has to be used) is assigned with function,means function as a input accept kiya. */
   console.log(callback); // this will print the whole function.
-  callback("Shikhar"); // here function is called, this process is known as callback function.
+  callback(); // here function is called, this process is known as callback function.
 }
 function myFunc2(name) {
   console.log("inside my func2");
-  console.log(`your name is ${name}`); // As we have not passed the name, so therefore the output will be undefined.
+  console.log(`your name is ${name}`); // As we have not passed the name, so therefore the output will be undefined or if we had passed the name, the name would be printed out. .
 }
-// myFunc(myFunc2); // passed function as an argument.
+// myFunc(myFunc2); // passed function as an input argument.
 //--------------------------------------------------------------------
+
+// function returning function.
+
+/* function intitialize */
+function myFuncs() {
+  function hello() {
+    /* Another function is called inside a function. */
+    console.log("hello world");
+  }
+  return hello; // function is return function.
+}
+const Ans = myFuncs(); // this means Ans also become a function.
+// console.log(Ans); // this will print whole function
+// Ans(); // this will print all the statements inside a function.
