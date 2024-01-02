@@ -97,7 +97,9 @@ function printDetails({ firstName, gender }) {
 //-------------------------------------------------------------------
 // Callback function.
 function myFunc(a) {
-  console.log(a);
-  console.log("hello world");
+  a();
 }
-myFunc([1, 2, 3]);
+function myFunc2() {
+  console.log("inside my func2");
+}
+myFunc(myFunc2); // passed function as an argument.
