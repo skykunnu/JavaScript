@@ -15,9 +15,21 @@ userName.sort();
 // Find method
 const myArray = ["hello", "cat", "dog", "lion"];
 
+/* Using simple callbackfunction */
+
 function isLength(string) {
   return string.length === 3;
 }
 
-const ans = myArray.find(isLength);
-console.log(ans);
+/* Using Arrow function. */
+const ans = myArray.find((string) => string.length === 3);
+console.log(ans); // it will only print the first occurence word which is of length 3.
+
+//-------------------------------------------------------------------------------------------------------------------------
+
+// Every method
+const Numbers = [2, 4, 6, 8, 10];
+Numbers.every((number) => number % 2 === 0);
+
+// callback function ---> boolean
+// every method ---> boolean (it will return true if all numbers of the array is even, if any one of them turns out be odd it will print false.) * Subject to condition.
