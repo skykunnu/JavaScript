@@ -59,4 +59,7 @@ function myFunc(a, b, ...c) {
   console.log(`b is ${b}`); // b is 4
   console.log(`c is `, c); // c is  [ 5, 6, 7, 8 ]
 }
-myFunc(3, 4, 5, 6, 7, 8);
+// myFunc(3, 4, 5, 6, 7, 8);
+
+function addAll() {}
+addAll(2, 3, 4, 5, 6, 7, 8);
