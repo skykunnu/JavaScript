@@ -54,7 +54,9 @@ function myApp() {
 // rest Parameters
 
 function myFunc(a, b, ...c) {
-  console.log(`a is ${a}`);
-  console.log(`b is ${b}`);
-  console.log(`c is ${c}`);
+  // using 3 dots remaining variable other than a & b are stored in c as an array.
+  console.log(`a is ${a}`); // a is 3
+  console.log(`b is ${b}`); // b is 4
+  console.log(`c is `, c); // c is  [ 5, 6, 7, 8 ]
 }
+myFunc(3, 4, 5, 6, 7, 8);
