@@ -86,4 +86,18 @@ function printDetails(obj) {
   console.log(obj.firstName);
   console.log(obj.gender);
 }
-printDetails(person);
+
+// Destructuring part
+function printDetails({ firstName, gender }) {
+  /* here we have destructured parameters with different name.*/
+  console.log(firstName);
+  console.log(gender);
+}
+// printDetails(person);
+//-------------------------------------------------------------------
+// Callback function.
+function myFunc(a) {
+  console.log(a);
+  console.log("hello world");
+}
+myFunc([1, 2, 3]);
