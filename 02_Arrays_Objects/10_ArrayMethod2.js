@@ -33,3 +33,14 @@ const Ans = Numbers.every((number) => number % 2 === 0);
 console.log(Ans); // true as all elements are even.
 // callback function ---> boolean
 // every method ---> boolean (it will return true if all numbers of the array is even, if any one of them turns out be odd it will print false.) * Subject to condition.
+
+//------------------------------------------------------------
+
+// Some Method
+
+const numbers = [3, 5, 11, 9]; // or [3,5,8,9]
+
+// If any one of the elements of an array is even it will return true or else false.
+
+const ans1 = numbers.some((numbers) => numbers % 2 === 0);
+console.log(ans1);
