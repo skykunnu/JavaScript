@@ -42,9 +42,9 @@ Coding.forEach((item) => {
 const numbers = [1, 2, 3, 4];
 
 /* Using Simple function*/
-// const square = function (number) {
-//   return number + number;
-// };
+const square = function (number) {
+  return number + number;
+};
 
 /* Using arrow function*/
 
@@ -58,5 +58,13 @@ const squareNumber = numbers.map((number, index) => {
 // filter Method
 const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-const NewNums = myNums.filter((num) => num > 4); // if you are not using curly braces then no need to write return num>4.
-console.log(NewNums);
+const NewNums = myNums.filter((num) => num % 2 == 0); // if you are not using curly braces, then don't need to write return num%2==0.
+// console.log(NewNums);
+
+//----------------------------------------------------------------------
+
+//Reduce method
+
+const Numbers = [1, 2, 3, 4, 5];
+
+Numbers.reduce(() => {});
