@@ -5,7 +5,7 @@
 // Filter
 // reduce
 //-------------------------------------------------------------------------------------------------------------------
-//1. ForEach- it does'nt return anything.
+//1. forEach- It does'nt return anything.
 const coding = ["JS", "Java", "Cpp", "Go", "Rust", "Python"];
 
 //Syntax for forEach Method using simple function.
@@ -65,6 +65,26 @@ const NewNums = myNums.filter((num) => num % 2 == 0); // if you are not using cu
 
 //Reduce method
 
-const Numbers = [1, 2, 3, 4, 5];
+const Numbers = [1, 2, 3, 4, 5, 10];
+// aim: to sum of all numbers in an array.
+const sum = Numbers.reduce((accumulator, currentValue) => {
+  /* reduce is doing sum of the elements of the array. */
+  return accumulator + currentValue;
+}); // As soon as the curly braces is ending you can initialize the current value of accumulator.
+console.log(sum);
+// Track accumulator , currentValue  , return
+//          1              2             3
+//          3              3             6
+//          6              4             10
+//          10             5             15
+//          15             10            25
 
-Numbers.reduce(() => {});
+const userCart = [
+  { productId: 1, productName: "mobile", price: 12000 },
+  { productId: 2, productName: "Laptop", price: 22000 },
+  { productId: 3, productName: "Headphones", price: 5000 },
+];
+
+userCart.reduce(totalPrice, currentProduct){
+
+};
