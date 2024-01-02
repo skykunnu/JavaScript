@@ -63,7 +63,7 @@ const NewNums = myNums.filter((num) => num % 2 == 0); // if you are not using cu
 
 //----------------------------------------------------------------------
 
-//Reduce method
+//Reduce method--> It just do the sum and return it.
 
 const Numbers = [1, 2, 3, 4, 5, 10];
 // aim: to sum of all numbers in an array.
