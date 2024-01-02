@@ -23,14 +23,14 @@ function isLength(string) {
 
 /* Using Arrow function. */
 const ans = myArray.find((string) => string.length === 3);
-console.log(ans); // it will only print the first occurence word which is of length 3.
+// console.log(ans); // it will only print the first occurence word which is of length 3.
 
 //-------------------------------------------------------------------------------------------------------------------------
 
 // Every method
 const Numbers = [2, 4, 6, 8, 10];
 const Ans = Numbers.every((number) => number % 2 === 0);
-console.log(Ans); // true as all elements are even.
+// console.log(Ans); // true as all elements are even.
 // callback function ---> boolean
 // every method ---> boolean (it will return true if all numbers of the array is even, if any one of them turns out be odd it will print false.) * Subject to condition.
 
@@ -42,5 +42,15 @@ const numbers = [3, 5, 11, 9]; // or [3,5,8,9]
 
 // If any one of the elements of an array is even it will return true or else false.
 
+// In general if the below condition gets satisfy on any element of the array it will return true or else false.
+
 const ans1 = numbers.some((numbers) => numbers % 2 === 0);
-console.log(ans1);
+// console.log(ans1); // Boolean (true/false).
+
+//----------------------------------------------------------------
+// fill Method
+// value  , start,  end
+// It does modify the original array.
+const myArray1 = [1, 2, 3, 4, 5, 6, 7, 8];
+myArray1.fill(0, 2, 5); // first is value to be filled at the start place and end place(not included--> (end-1)th index).
+console.log(myArray1);
