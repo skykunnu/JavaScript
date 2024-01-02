@@ -70,8 +70,10 @@ const Numbers = [1, 2, 3, 4, 5, 10];
 const sum = Numbers.reduce((accumulator, currentValue) => {
   /* reduce is doing sum of the elements of the array. */
   return accumulator + currentValue;
-}); // As soon as the curly braces is ending you can initialize the current value of accumulator.
-console.log(sum);
+}); // As soon as the curly braces is ending you can initialize any current value of accumulator.
+// console.log(sum);
+
+/* Below is the way to understand the Reduce method*/
 // Track accumulator , currentValue  , return
 //          1              2             3
 //          3              3             6
@@ -85,6 +87,8 @@ const userCart = [
   { productId: 3, productName: "Headphones", price: 5000 },
 ];
 
-userCart.reduce(totalPrice, currentProduct){
+const totalAmount = userCart.reduce((totalPrice, currentProduct) => {
+  return totalPrice + currentProduct.price;
+}, 0);
 
-};
+console.log(totalAmount);
