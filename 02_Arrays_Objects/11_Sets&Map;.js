@@ -12,3 +12,6 @@ numbers.add(4);
 numbers.add(["item1", "items2"]); // this is different than below as both of them have different memory locations.
 numbers.add(["item1", "items2"]);
 console.log(numbers);
+
+//------------------------------------------------------------------------------------------------------------------------------------
+// Map Method
