@@ -24,3 +24,5 @@ const Person3 = {
 Person1.about(); // this keyword is pointing to Person1 obj
 Person2.about(); // this keyword is pointing to Person2 obj
 Person3.about(); // this keyword is pointing to Person3 obj
+
+// !! console.log(this); // Window object will be the output, it is the global object of Js. here this is pointing to global object.
