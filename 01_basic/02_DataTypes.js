@@ -1,4 +1,4 @@
-"use strict"; //treat all JS version as newer version
+"use strict"; //treat all JS version as newer version and also use for error handling.
 // alert(3+3) // we are using nodejs, not browser
 
 let name = "Shikhar";
