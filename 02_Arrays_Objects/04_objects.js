@@ -26,8 +26,8 @@ for (let key in Person) {
 
 // For of loop
 for (let key of Object.keys(Person)) {
-  // console.log(key);
-  // console.log(Person[key]);
+  // console.log(key); // only print the keys.
+  // console.log(Person[key]); // it will print the values of the keys
 }
 
 /**************Spread Operator in Objects************* */
@@ -71,7 +71,7 @@ const [user1, user2, user3, user4, user5] = Users; // these user1,2 and so on ar
 const [{ firstName }, , { Gender }] = Users; // here we have rename the 0th index, 2nd index and remove the 1st index.
 // this will print the values of 0th index firstName and 2nd index Gender.
 // let say if you want to change the name of firstName to userFirstName, Simply use FirstName: userFirstName.
-console.log(firstName, Gender); // It will print the firstName of 0th index and Gender of 2nd index.
+// console.log(firstName, Gender); // It will print the firstName of 0th index and Gender of 2nd index.
 //------------------------------------------------------------------------------------------------------------
 /* Objects inside an array --> Useful in Real-life Applications */
 const users = [
