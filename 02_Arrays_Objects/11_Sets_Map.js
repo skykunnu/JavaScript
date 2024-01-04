@@ -42,16 +42,21 @@ person.set(1, "one");
 person.set([1, 2, 3], "onetwothree");
 person.set({ 1: "one" }, "onetwo"); // {}-> key and " "-> value.e
 // if you have to access any key in Map use get keyword.
-console.log(person.get("firstName"));
+// console.log(person.get("firstName"));
 
-console.log(person.keys()); // All keys will be listed out.
+// console.log(person.keys()); // All keys will be listed out.
+
+for (let [key, value] of person) {
+  /* you cannot write key,value together without destructuring it.*/
+  // console.log(key, value);
+}
 
 for (let key of person) {
-  // whole key value pair will be printed out.
-  console.log(key);
+  // whole key value pair will be printed out in the form of array.
+  // console.log(key);
 }
 
 for (let key of person.keys()) {
-  // only keys will be printed out.
-  console.log(key);
+  //   // only keys will be printed out.
+  //   console.log(key);
 }
