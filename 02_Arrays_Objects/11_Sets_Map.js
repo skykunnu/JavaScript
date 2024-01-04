@@ -35,7 +35,7 @@ const person = {
 */
 
 //Syntax
-const person = new Map();
+const person = new Map(); // creating empty map aand then setting the key values inside it.
 person.set("firstName", "Shikhar");
 person.set("age", "23");
 person.set(1, "one");
@@ -45,6 +45,12 @@ person.set({ 1: "one" }, "onetwo"); // {}-> key and " "-> value.e
 // console.log(person.get("firstName"));
 
 // console.log(person.keys()); // All keys will be listed out.
+
+// You can also directly input (key-value) pair inside the map function.
+const Person = new Map([
+  ["firstName", "Shikhar"], // why we are storing it in array form, it is because they are stored in this fashion only.
+  ["age", "23"],
+]);
 
 for (let [key, value] of person) {
   /* you cannot write key,value together without destructuring it.*/
