@@ -40,7 +40,7 @@ person.set("firstName", "Shikhar");
 person.set("age", "23");
 person.set(1, "one");
 person.set([1, 2, 3], "onetwothree");
-person.set({ 1: "one" }, "onetwo"); // {}-> key and " "-> value.e
+person.set({ 1: "one" }, "onetwo"); // {}-> key and " "-> value
 // if you have to access any key in Map use get keyword.
 // console.log(person.get("firstName"));
 
@@ -66,3 +66,13 @@ for (let key of person.keys()) {
   //   // only keys will be printed out.
   //   console.log(key);
 }
+
+// Ques- Add more key-value pairs to object using Map.
+const Male = {
+  firstName: "Shikhar",
+  gender: "Male",
+};
+
+const People = new Map();
+People.set(Male, { age: 27, id: 1 }); // here Male object is associating with some additional info (age & id).
+console.log(People.get(Male).id); // Here, you use the get method of the People Map to retrieve the value associated with the key Male, which is the object { age: 27, id: 1 }. Then, you access the id property of this object and log it to the console. So, it will output 1.
