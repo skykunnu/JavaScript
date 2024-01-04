@@ -51,6 +51,6 @@ for (let key of person) {
 }
 
 for (let key of person.keys()) {
-  // only key will be printed out.
+  // only keys will be printed out.
   console.log(key);
 }
