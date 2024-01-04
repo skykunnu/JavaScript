@@ -40,6 +40,7 @@ person.set("firstName", "Shikhar");
 person.set("age", "23");
 person.set(1, "one");
 person.set([1, 2, 3], "onetwothree");
+person.set({ 1: "one" }, "onetwo"); // {}-> key and " "-> value.
 // if you have to access any key in Map use get keyword.
 console.log(person.get("firstName"));
 
