@@ -47,3 +47,8 @@ let skills = ["Programmer", "Consultant"];
 
 //----------------------------------------------------------------
 // Bind Method
+let a = function () {
+  console.log(this);
+};
+
+a();
