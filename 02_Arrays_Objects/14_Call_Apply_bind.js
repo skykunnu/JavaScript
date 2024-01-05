@@ -50,7 +50,7 @@ let skills = ["Programmer", "Consultant"];
 // It is used when you want to set the context of this keyword during function Expression.
 
 let a = function () {
-  console.log(this);
+  console.log(this); // { }-->Empty object , because with.bind() we have set the context of this word to empty object otherwise this keyword would point to employees object.
 }.bind({});
 
 let employees = {
@@ -60,7 +60,7 @@ let employees = {
   },
 };
 
-employees.checkId();
-employees.checkThisAgain();
+// employees.checkId(); //-->{ } Empty Object.
+// employees.checkThisAgain(); //--> Employees object.
 
 // a();
