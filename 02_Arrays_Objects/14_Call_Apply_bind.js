@@ -34,6 +34,16 @@ let fullName = function (arg1, arg2) {
 
 // fullName("Programmer", "Consultant"); // Erorr , because of 'this' keyword as there is no context of 'this' keyword.
 
-fullName.call(name, "Programmer", "Consultant"); // Shikhar Khandelwal is a Programmer and Consultant., As we already know first argument of .call() is a context of this keyword.
+// fullName.call(name, "Programmer", "Consultant"); // Shikhar Khandelwal is a Programmer and Consultant., As we already know first argument of .call() is a context of this keyword.
 
-// without call you cannot set the context and vice-versa.
+/* without call you cannot set the context and vice-versa. */
+
+//------------------------------------------------------------------------
+// Apply method-
+//This works in similar way as call do but the only difference between of them is of arguments only, instead of passing only arguments in call method, you can pass the array of arguments in apply method.
+
+let skills = ["Programmer", "Consultant"];
+// fullName.apply(name, skills); // Shikhar Khandelwal is a Programmer and Consultant. // or fullName.apply(name, ["Programmer","Consultant"]).
+
+//----------------------------------------------------------------
+// Bind Method
