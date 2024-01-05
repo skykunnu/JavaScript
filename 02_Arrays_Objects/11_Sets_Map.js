@@ -22,6 +22,7 @@ numbers.add(["item1", "items2"]);
 -> duplicate keys are not allowed
 
 # Difference between map and objects
+
 1. Objects can only have string or symbol as key.
 
 2. In Map you can use anything as key (like array,number,string).
