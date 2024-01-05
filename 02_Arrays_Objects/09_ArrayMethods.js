@@ -70,7 +70,7 @@ const Numbers = [1, 2, 3, 4, 5, 10];
 const sum = Numbers.reduce((accumulator, currentValue) => {
   /* reduce is doing sum of the elements of the array. */
   return accumulator + currentValue;
-}); // As soon as the curly braces is ending you can initialize any current value of accumulator.
+}, 1); // As soon as the curly braces ended you can initialize any current value of accumulator.
 // console.log(sum);
 
 /* Below is the way to understand the Reduce method,
