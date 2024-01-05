@@ -25,6 +25,7 @@ Person1.about(); // this keyword is pointing to Person1 obj
 Person2.about(); // this keyword is pointing to Person2 obj
 Person3.about(); // this keyword is pointing to Person3 obj
 
-// !! console.log(this); // Window object will be the output, becoz it is the global object of Js. here this is pointing to global scope and object of global scope is windows.
+// !! console.log(this); // Window object will be the output,
+/* As this keyword is used in the global context and in web based environment, the global object is usually 'window'. */
 
-// if there is a node environment then this keyword will refer to empty object.
+// if there is a Node-based environment then this keyword will refer to empty object.
