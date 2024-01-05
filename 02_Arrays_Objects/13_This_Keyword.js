@@ -44,16 +44,17 @@ function Inside() {
 
 const person = {
   checkThis: function () {
+    // "Use Strict";
+    // let self = this; // To Remove the unstability. irrespective of which function you are using this keyword it will always point to an object.
     console.log(this); // Person object.
 
     function checkThisAgain() {
       this.name = "Shikhar"; // it is pointing to the global object which is window.
-
-      console.log(this); // However, because checkThisAgain is a regular function (not a method of an object) and is not called as a method on an object, the 'this' inside it refers to the global object (Window in a browser environment).
+      console.log(this); // However, because checkThisAgain is a regular function (not a method of an object) and is not called as a method on an object, the 'this' inside it refers to the global object (Window in a browser environment). or // it will give undefined, becoz when we use strict keyword it will remove the default context (Windows).
     }
     checkThisAgain();
-    console.log(this.name); // Undefined, because here 'this' is pointing to person object not the window object. inside person object no name is defined.
-    console.log(window.name); //
+    console.log(this.name); // Undefined, because here 'this' is pointing to person object not the window object. inside person object no name is defined. or when use self instead of this keyword, the output will be Shikhar.
+    console.log(name); // Shikhar, because this.name is defined inside the window object. or when use self , output will be shikhar.
   },
 };
 //person.checkThis(); // pointing to the object itself becoz callie of the method is person, which is an object.
@@ -61,4 +62,5 @@ const person = {
 
 const func = person.checkThis;
 //func(); // As there is no calling context by default the output will be window object.
-console.log(person.checkThis());
+
+// console.log(person.checkThis());
