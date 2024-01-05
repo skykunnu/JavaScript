@@ -1,5 +1,5 @@
 // Call,Apply,bind methods.--> Important for Interviews.
-function hello() {
-  console.log("hello world");
+function checkThis() {
+  console.log(this);
 }
-hello.call();
+checkThis.call();

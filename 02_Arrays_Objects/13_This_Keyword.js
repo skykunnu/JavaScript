@@ -44,8 +44,8 @@ function Inside() {
 
 const person = {
   checkThis: function () {
-    // "Use Strict";
-    // let self = this; // To Remove the unstability, irrespective of which function you are using this keyword it will always point to an object.
+    // "Use Strict"; // It is used to stabilise the this keyword context.
+    // let self = this; // irrespective of which function you are using this keyword it will always point to an object.
     console.log(this); // Person object.
 
     function checkThisAgain() {
