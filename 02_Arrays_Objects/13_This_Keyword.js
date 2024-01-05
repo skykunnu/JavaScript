@@ -47,12 +47,13 @@ const person = {
     console.log(this); // Person object.
 
     function checkThisAgain() {
-      this.name = "Shikhar"; // it is essentially creating globa variable named name and setting it to "Shikhar".
+      this.name = "Shikhar"; // it is pointing to the global object which is window.
 
       console.log(this); // However, because checkThisAgain is a regular function (not a method of an object) and is not called as a method on an object, the 'this' inside it refers to the global object (Window in a browser environment).
     }
     checkThisAgain();
-    console.log(this.name); // Undefined, because
+    console.log(this.name); // Undefined, because here 'this' is pointing to person object not the window object. inside person object no name is defined.
+    console.log(window.name); //
   },
 };
 //person.checkThis(); // pointing to the object itself becoz callie of the method is person, which is an object.
@@ -60,3 +61,4 @@ const person = {
 
 const func = person.checkThis;
 //func(); // As there is no calling context by default the output will be window object.
+console.log(person.checkThis());
