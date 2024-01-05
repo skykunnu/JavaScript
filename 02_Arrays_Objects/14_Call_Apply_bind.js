@@ -46,9 +46,21 @@ let skills = ["Programmer", "Consultant"];
 // fullName.apply(name, skills); // Shikhar Khandelwal is a Programmer and Consultant. // or fullName.apply(name, ["Programmer","Consultant"]).
 
 //----------------------------------------------------------------
-// Bind Method
+// Bind Method-
+// It is used when you want to set the context of this keyword during function Expression.
+
 let a = function () {
   console.log(this);
+}.bind({});
+
+let employees = {
+  checkId: a,
+  checkThisAgain: function () {
+    console.log(this);
+  },
 };
 
-a();
+employees.checkId();
+employees.checkThisAgain();
+
+// a();
