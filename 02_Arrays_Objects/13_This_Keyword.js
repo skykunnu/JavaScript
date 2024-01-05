@@ -38,7 +38,7 @@ const Person3 = {
 function Inside() {
   console.log(this);
 }
-Inside(); // Inside a function, the value of this depends on how the function is called. If the function is a regular function (not a method of an object), this in that function will again refer to the global object (window in a browser environment).
+// Inside(); // Inside a function, the value of this depends on how the function is called. If the function is a regular function (not a method of an object), this in that function will again refer to the global object (window in a browser environment).
 
 //
 
@@ -47,5 +47,8 @@ const person = {
     console.log(this);
   },
 };
-person.checkThis();
-console.log(person);
+person.checkThis(); // pointing to the object itself becoz callie of the method is person, which is an object.
+console.log(person); // pointing to the object itself
+
+const func = person.checkThis;
+func(); // As there is no calling context by default the output will be window object.
