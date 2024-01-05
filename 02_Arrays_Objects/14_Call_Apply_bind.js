@@ -15,8 +15,25 @@ let person = {
     function checkThisAgain() {
       console.log(this);
     }
-    checkThisAgain.call(this); // without .call, the output of line 16  would be undefined but due to .call it will be person object and also explicitly setting the context of 'this' keyword.
+    // checkThisAgain.call(this); // without .call, the output of line 16  would be undefined but due to .call it will be person object and also explicitly setting the context of 'this' keyword.
   },
 };
 
-person.checkThis();
+// person.checkThis();
+
+//------------------------------------------------------------------
+
+let name = {
+  firstName: "Shikhar",
+  lastName: "Khandelwal",
+};
+
+let fullName = function (arg1, arg2) {
+  console.log(
+    `${this.firstName} ${this.lastName} is a ${arg1} and ${arg2} guy`
+  );
+};
+
+// fullName("Programmer", "Consultant"); // Erorr , because of 'this' keyword as there is no context of 'this' keyword.
+
+fullName.call(name, "Programmer", "Consultant");
