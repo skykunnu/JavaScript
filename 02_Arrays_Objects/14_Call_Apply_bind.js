@@ -15,13 +15,14 @@ let person = {
     function checkThisAgain() {
       console.log(this);
     }
-    checkThisAgain(this); // without .call, the output of line 16  would be undefined but, due to .call output will be person object and also it is explicitly setting the context of 'this' keyword.
+    checkThisAgain(this); // without .call, the output of line 16  would be undefined(strict mode) and windows object(Non-Strict mode) but, due to .call output will be person object(for both mode) and also it is explicitly setting the context of 'this' keyword.
   },
 };
 
-person.checkThis();
-
-//------------------------------------------------------------------
+// person.checkThis(); // output will be the person object for 14th log statement. and undefined for 16th line log statement if 18th statement is called and all these output will come only in use strict mode. for Non strict mode 2nd log statement will point to window object.
+//-----------------------------------------------------------------------------------------------------------------------------------------
+// console.log(person.checkThis()); // output for this will be for 1st log statement--> person object, for 2nd log statement without call func --> undefined and with call func --> person object and for 24 line log statement will be undefined because, Since there is no explicit return value, method implicitly returns undefined.--> (in use strict mode) and for (Non strict mode), the output for 1st log statement will be person object and fonr 2nd log statement with call func--> person object and without call func--> windows object and for 24 line log statement will be undefined same as that in strict mode.
+//-----------------------------------------------------------------------------------------------------------------------------------------
 
 let name = {
   firstName: "Shikhar",
