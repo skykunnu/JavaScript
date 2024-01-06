@@ -38,13 +38,11 @@ const Person3 = {
 function Inside() {
   console.log(this);
 }
-// Inside(); // Inside a function, the value of this depends on how the function is called. If the function is a regular function (not a method of an object), this in that function will again refer to the global object (window in a browser environment).
-
-//
+// Inside(); // Inside a function, the value of 'this' depends on how the function is called. If the function is a regular function (not a method of an object), 'this' in that function will again refer to the global object (window in a browser environment).
 
 const person = {
   checkThis: function () {
-    // "use strict"; // It is used to stabilise the this keyword context.
+    // "use strict"; // It is used to stabilise the this keyword context and remove the global object.
     // let self = this; // irrespective of which function you are using this keyword it will always point to an object.
     console.log(this); // Person object.
 
@@ -52,7 +50,7 @@ const person = {
       this.name = "Shikhar"; // it is pointing to the global object which is window.
       console.log(this); // However, because checkThisAgain is a regular function (not a method of an object) and is not called as a method on an object, the 'this' inside it refers to the global object (Window in a browser environment). or // it will give undefined, becoz when we use strict keyword it will remove the default context (Windows).
     }
-    checkThisAgain();
+    // checkThisAgain();
     console.log(this.name); // Undefined, because here 'this' is pointing to person object not the window object. inside person object no name is defined. or If we use self instead of this keyword, the output will be Shikhar. as self is capturing the value of this from the outer function, where it still refer to the person object.
 
     console.log(name); // Shikhar, because this.name is defined inside the window object. or when use self , output will be shikhar.
@@ -62,6 +60,6 @@ const person = {
 //console.log(person); // pointing to the object itself
 
 const func = person.checkThis;
-//func(); // As there is no calling context by default the output will be window object.
+func(); // As there is no calling context by default the output will be window object.
 
 // console.log(person.checkThis());
