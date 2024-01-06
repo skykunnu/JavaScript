@@ -1,5 +1,5 @@
 // Call,Apply,bind methods.--> These Methods are used to provide the context . (Important for Interviews.)
-"use strict";
+"use strict"; // Used for removing defualt global execution context.
 
 function checkThis() {
   console.log(this);
