@@ -62,4 +62,4 @@ const person = {
 const func = person.checkThis;
 // func(); // As there is no calling context by default the output will be window object.
 
-// console.log(person.checkThis()); --> Person object and undefined, object for checkThis method becoz it is being called and undefined for nested function as it is not being called by checkThis method.
+// console.log(person.checkThis()); //--> Person object and undefined, Person object for checkThis method becoz it is being called On and undefined for nested function as it is not being called by checkThis method.

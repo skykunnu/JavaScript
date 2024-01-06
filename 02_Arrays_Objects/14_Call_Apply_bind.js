@@ -1,11 +1,11 @@
-// Call,Apply,bind methods.--> Important for Interviews.
+// Call,Apply,bind methods.--> These Methods are used to provide the context . (Important for Interviews.)
 "use strict";
 
 function checkThis() {
   console.log(this);
 }
-// checkThis(1); // Undefined, because the 1 is passed as an argument not as context and also in this case 'this' keyword is pointing to global object.
-// checkThis.call(1); // when we call the function using .call then the first value will go and act as a context of 'this' keyword.
+// checkThis(1); // Undefined, because the 1 is passed as an argument not as context.
+// checkThis.call(1); // when we call the function using .call then the first value will go and act as a Execution context of 'this' keyword.
 
 //-------------------------------------------------------------------
 
@@ -15,11 +15,11 @@ let person = {
     function checkThisAgain() {
       console.log(this);
     }
-    // checkThisAgain.call(this); // without .call, the output of line 16  would be undefined but due to .call it will be person object and also it is explicitly setting the context of 'this' keyword.
+    checkThisAgain(this); // without .call, the output of line 16  would be undefined but, due to .call output will be person object and also it is explicitly setting the context of 'this' keyword.
   },
 };
 
-// person.checkThis();
+person.checkThis();
 
 //------------------------------------------------------------------
 
@@ -49,18 +49,18 @@ let skills = ["Programmer", "Consultant"];
 // Bind Method-
 // It is used when you want to set the context of this keyword during function Expression.
 
-let a = function () {
-  console.log(this); // { }-->Empty object , because with.bind() we have set the context of this word to empty object otherwise this keyword would point to employees object.
-}.bind({});
+// let a = function () {
+//   console.log(this); // { }-->Empty object , because with.bind() we have set the context of this word to empty object otherwise this keyword would point to employees object.
+// }.bind({});
 
-let employees = {
-  checkId: a,
-  checkThisAgain: function () {
-    console.log(this);
-  },
-};
+// let employees = {
+//   checkId: a,
+//   checkThisAgain: function () {
+//     console.log(this);
+//   },
+// };
 
-// employees.checkId(); //-->{ } Empty Object.
-// employees.checkThisAgain(); //--> Employees object.
+// // employees.checkId(); //-->{ } Empty Object.
+// // employees.checkThisAgain(); //--> Employees object.
 
-// a();
+// // a();
