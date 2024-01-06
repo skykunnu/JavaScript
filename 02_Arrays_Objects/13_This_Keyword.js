@@ -47,19 +47,18 @@ const person = {
     console.log(this); // Person object.
 
     function checkThisAgain() {
-      this.name = "Shikhar"; // it is pointing to the global object which is window where method name is defined as shikhar.
+      // this.name = "Shikhar"; // it is pointing to the global object which is window where method name is defined as shikhar.
       console.log(this); // However, because checkThisAgain is a regular function (not a method of an object) and is not called as a method on an object, the 'this' inside it refers to the global object (Window in a browser environment). or // it will give undefined, becoz when we use strict keyword it will remove the default context (Windows).
     }
-    checkThisAgain();
-    console.log(this.name); // Undefined, because here 'this' is pointing to person object not the window object. inside person object no name is defined. or If we use self instead of this keyword, the output will be Shikhar. as self is capturing the value of this from the outer function, where it still refer to the person object.
+    // checkThisAgain();
+    // console.log(this.name); // Undefined, because here 'this' is pointing to person object not the window object. inside person object no name is defined. or If we use self instead of this keyword, the output will be Shikhar. as self is capturing the value of this from the outer function, where it still refer to the person object.
 
-    console.log(name); // Shikhar, because this.name is defined inside the window object. or when use self , output will be shikhar.
+    // console.log(name); // Shikhar, because this.name is defined inside the window object. or when use self , output will be shikhar.
   },
 };
-// person.checkThis(); // pointing to the object itself becoz callie of the method is person, which is an object.
-// console.log(person); // pointing to the (Person object) itself
+// person.checkThis(); // 1st log statement will give output as person object, 2nd log statement will give Undefined due to use strict mode and for non strict mode 1st log will give same output and 2nd log will give windows obejct as a output.
 
 const func = person.checkThis;
 // func(); // As there is no calling context by default the output will be window object.
 
-// console.log(person.checkThis()); //--> Person object and undefined, Person object for checkThis method becoz it is being called On and undefined for nested function as it is not being called by checkThis method.
+console.log(person.checkThis()); // Output--> (Strict mode) for 1st log statement-->Person object, 2nd Log statement--> Undefined due to strict mode and for own 64th line--> undefined becoz , Since there is no explicit return value, method implicitly returns undefined. (Non-Strict mode)--> 1st log--> person object ,2nd Log--> Windows object and 64th line log--> undefined becoz of no return value by method.
