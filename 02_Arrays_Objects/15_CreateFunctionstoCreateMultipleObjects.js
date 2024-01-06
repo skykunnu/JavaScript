@@ -1,6 +1,7 @@
-// But what if we want multiple users. To cater this we will create a function.
+// Creating Multiple objects from Single function.
+//To cater this we will create a function.
 /* 
-1. function (This function will create object )
+1. function (This function will create an empty object )
 2. add key value pair
 3. then it will return the object.
 */
@@ -16,8 +17,9 @@ const userMethods = {
     return this.age >= 18;
   },
 };
+//single function
 function createUser(firstName, lastName, email, age, address) {
-  const user = Object.create(userMethods); // __proto__  syntax and as well as { } Empty object. Explanation of line-58 first js will see in user that there is something about word is there or not, if it is not then it will check to its proto object which in this case is userMethods which we passed as an argument and we know about is define over there it will return from there to user. that's how this __proto__ object works. !! Important for Interviews.
+  const user = Object.create(userMethods); // __proto__  syntax and as well as { } Empty object. Explanation of line-60 first js will see in user that there is something (aboutmethod) is there or not, if it is not there, then it will check to its proto object which in this case is userMethods which we passed as an argument and we know that it is define over there and from there it will return to the user. And that's how this __proto__ object works. !! Important for Interviews.
   user.firstName = firstName;
   user.lastName = lastName;
   user.email = email;
@@ -25,7 +27,7 @@ function createUser(firstName, lastName, email, age, address) {
   user.address = address;
   return user;
 }
-
+// Multiple Users
 const user1 = createUser(
   "Shikhar",
   "khandelwal",
@@ -41,19 +43,21 @@ const user2 = createUser(
   "Jaipur"
 );
 const user3 = createUser(
-  "Shikhar",
-  "khandelwal",
-  "sky@gmail.com",
+  "Dikshant",
+  "Gupta",
+  "diksy@gmail.com",
   "22",
   "Jaipur"
 );
 const user4 = createUser(
-  "Shikhar",
-  "khandelwal",
-  "sky@gmail.com",
-  "22",
+  "Darshit",
+  "Gupta",
+  "darshit@gmail.com",
+  "20",
   "Jaipur"
 );
 
-console.log(user1.about()); // Shikhar is 22 years old. Although there is nothing like about inside createUser function then also it is able to output the expected output it is because of proto object concept. see at line 18
-console.log(user2.about()); // Rashi is 24 years old.
+// console.log(user1.about()); // Shikhar is 22 years old. Although there is nothing like (about()) inside createUser function then also it is able to give the output which was expected, it is because of proto object concept. see at line 22.
+// console.log(user2.about()); // Rashi is 24 years old.
+
+// console.log(user1); // User 1 info will be printed out in Object format and similarly for the rest of the user.
