@@ -32,7 +32,7 @@ const Person3 = {
 // !! console.log(this); // Window object will be the output,
 /* As this keyword is used in the global context and in web based environment, the global object is usually 'window'. */
 
-// if there is a Node-based environment then this keyword will refer to empty object.
+// if there is a Node-based environment then this keyword will point to empty object.
 
 // Inside a Regular function
 function Inside() {
