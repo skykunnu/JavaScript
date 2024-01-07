@@ -8,5 +8,4 @@ const user = {
     console.log(this.firstName, this.Age); // Undefined , Undefined.
   },
 };
-
-user.about();
+user.about(); // No call ,apply or bind method can change the execution context of this.
