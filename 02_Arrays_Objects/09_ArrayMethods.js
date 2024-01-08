@@ -35,7 +35,7 @@ const Coding = [
 ];
 
 Coding.forEach((item) => {
-  // console.log(item.LanguageName); --> Printing the LanguageName of the objects defined inside the array.
+  console.log(item.LanguageName); //--> Prints all the LanguageName of the objects defined inside the array.
 });
 //----------------------------------------------------------------------------------------------------------------------------------
 // Map method
