@@ -1,12 +1,13 @@
-// Creating Multiple objects from Single function.
-//To cater this we will create a function.
+// Creating Multiple objects from a single function.
+
+//To cater this question, we will create a function.
 /* 
 1. function (This function will create an empty object )
 2. add key value pair
 3. then it will return the object.
 */
 
-// Why we have created the separate obejct for these two methods, because it would take million memory location to store same methods for different million user rather than taking large memory location we have create a particular object to store these methods and will call them in our createUser function.
+// Why we have created the separate object for these two methods, because it would take million memory location to store same methods for different million user rather than taking large memory location we have create a particular object to store these methods and will call them in our createUser function.
 
 /* Let's say we want to add multiple methods in createUser function from the userMethods object, but to do this it will take time and it's  a tedious work to do. So, To overcome this issue we have something known as __proto__ obejct concept. */
 const userMethods = {
@@ -19,7 +20,7 @@ const userMethods = {
 };
 //single function
 function createUser(firstName, lastName, email, age, address) {
-  const user = Object.create(userMethods); // __proto__  syntax and as well as { } Empty object. Explanation of line-60 first js will see in user that there is something (aboutmethod) is there or not, if it is not there, then it will check to its proto object which in this case is userMethods which we passed as an argument and we know that it is define over there and from there it will return to the user. And that's how this __proto__ object works. !! Important for Interviews.
+  const user = Object.create(userMethods); // __proto__  syntax and as well as { } Empty object. Explanation of line-60 first js will see in user that there is something (aboutmethod) is there or not, if it is not there, then it will check to its proto object, which in this case is userMethods, which we passed as an argument and we know that it is define over there and from there it will return to the user. And that's how this __proto__ object works. !! Important for Interviews.
   user.firstName = firstName;
   user.lastName = lastName;
   user.email = email;
