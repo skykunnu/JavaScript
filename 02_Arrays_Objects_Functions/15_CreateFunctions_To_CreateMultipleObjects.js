@@ -8,6 +8,7 @@
 */
 
 // Why we have created the separate object for these two methods, because it would take million memory location to store same methods for different million user rather than taking large memory location we have create a particular object to store these methods and will call them in our createUser function.
+// while the Regular function has a prototype property and the object has __proto__ property.
 
 /* Let's say we want to add multiple methods in createUser function from the userMethods object, but to do this it will take time and it's  a tedious work to do. So, To overcome this issue we have something known as __proto__ obejct concept. */
 const userMethods = {
