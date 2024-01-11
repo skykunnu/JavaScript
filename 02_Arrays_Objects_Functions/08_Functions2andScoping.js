@@ -33,7 +33,7 @@ function myApp() {
 
 // let and const are block scope while var is function scope.
 
-// Although they have same variable name but their scoping is different. So that's why there is no error.
+// Although, they have same variable name but their scoping is different. So that's why there is no error.
 {
   let firstName = "Harshit";
   // console.log(firstName);
@@ -51,7 +51,7 @@ function myApp() {
 
 //----------------------------------------------------------------------------------------------------------------------------
 
-// rest Parameters
+// rest Parameters 
 
 function myFunc(a, b, ...c) {
   // using 3 dots remaining variable other than a & b are stored in c as an array.
