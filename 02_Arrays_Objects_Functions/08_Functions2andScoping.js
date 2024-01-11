@@ -20,14 +20,14 @@ function myApp() {
   // myApp Lexical environment is outside environment where it is defined.
   function myFunc() {
     // myFunc lexical environment is myApp().
-    // const myVar = "value59";
-    console.log("inside myFunc", myVar); // myVar=1 bcoz of lexical scope method or it will check the nearest value of myVar.
+    const myVar = "value59";
+    console.log("inside myFunc", myVar); // myVar=value1 bcoz of lexical scope method or it will check the nearest value of myVar. and if myVar=value59 is defined then output would be value59 not value1 again due to lexical concept. 
   }
 
-  console.log(myVar);
+  console.log(myVar);// value1 due to lexical concept.
   myFunc();
 }
-// myApp();
+myApp();
 //----------------------------------------------------------------------------------------------------------------------------
 /* block scope vs function scope */
 
