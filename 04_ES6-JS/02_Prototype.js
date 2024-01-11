@@ -25,7 +25,7 @@ createUser.prototype.printMe=function(){
 /* Without new keyword --> All will be undefined because user1 and user2 don't know where are these new properties located.  */
 const user1=createUser("chai",25);
 const user2=createUser("tea",250);
-console.log(user1); // undefined, because this keywords are refering to global environment.  
+// console.log(user1); // undefined, because this keywords are refering to global environment.  
 // console.log(user1.printMe); // Undefined, becoz there is no such thing like printMe and increment inside the createUser func
 // console.log(user2.increment); // Undefined
 
