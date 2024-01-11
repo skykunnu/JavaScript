@@ -7,77 +7,46 @@
 // whenever we create a function , function gives us a free space which is called prototype.
 // Only functions provides Prototype property.
 
-// function hello(){
-//     console.log("hello world");
-// }
-// console.log(hello.prototype); // {  }--> Empty Object, this is a free space provided by a function to a prototype , to store the key value pair to be later used by function.
-const hello=function(){
-    console.log("hello");
+// With arrow function you cannot use prototype property, becoz arrow function doesn't have their own 'this' keyword. this is the main reason they cannot use prototype property.  
+
+
+function createUser(username,score){
+  this.username=username;
+  this.score=score;
+}
+// with prototype you can define new properties for your object just like below.
+createUser.prototype.increment=function(){
+  return(`Your score after drinking is ${(this.score)=(this.score)+1}`);
 }
 
-// if(hello.prototype){
-//     console.log("Prototype is present");
-// }
-
-// else {
-//     console.log("prototype is not present");
-// }
-
-hello.prototype.abc="xyz"; // adding key-abc and value-xyz into a hello function.
-hello.prototype.xyz="abc";
-hello.prototype.sing=function(){ // adding function as a key value pair using prototype into a hello function. 
-    return "la la la lala kai su hun lailaaa har koi chahein mujhse milna akela"
+createUser.prototype.printMe=function(){
+  return(`price is ${this.score}`);
 }
-// console.log(hello.prototype.sing());
-//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+/* Without new keyword --> All will be undefined because user1 and user2 don't know where are these new properties located.  */
+const user1=createUser("chai",25);
+const user2=createUser("tea",250);
+console.log(user1); // undefined, because this keywords are refering to global environment.  
+// console.log(user1.printMe); // Undefined, becoz there is no such thing like printMe and increment inside the createUser func
+// console.log(user2.increment); // Undefined
 
 
-// const userMethods = {
-//     about: function () {
-//       return `${this.firstName} is ${this.age} years old`;
-//     },
-//     is18: function () {
-//       return this.age >= 18;
-//     },
-//   };
 
-  //single function
-  function createUser(firstName, lastName, email, age, address) {
-    const user = Object.create(createUser.prototype); // prototype property is passed as an argument .  syntax and as well as { } Empty object. Explanation of line-60 first js will see in user that there is something (createUser) is there or not, if it is not there, then it will check to its prototype , which in this case is createUser.prototype, which is passed as an argument and we know that it is define over there and from there it will return to the user. And that's how this prototype property works. !! Important for Interviews.
-    user.firstName = firstName;
-    user.lastName = lastName;
-    user.email = email;
-    user.age = age;
-    user.address = address;
-    return user;
-  }
-createUser.prototype.about=function(){
-    return `${this.firstName} is ${this.age} years old`;
-}
-createUser.prototype.is18=function(){
-    return this.age >= 18;
-}
-createUser.prototype.sing=function(){
-    return "zara zara behkta behkta aaj toh mera tann badan mein pyaasi"
-}
-  // Multiple Users
-  const user1 = createUser(
-    "Shikhar",
-    "khandelwal",
-    "sky@gmail.com",
-    "22",
-    "Jaipur"
-  );
-  const user2 = createUser(
-    "Rashi",
-    "khandelwal",
-    "Rashi@gmail.com",
-    "24",
-    "Jaipur"
-  );
+/* With new keyword
 
-  console.log(user1.about());
-  console.log(user2.about());
-  console.log(user1.sing());
-  console.log(user2.sing());
-  
+1. A new object is created: The new keyword initiates the creation of a new JavaScript object.
+
+2. A prototype is linked: The newly created object gets linked to the prototype property of the constructor function.
+This means that it has access to properties and method defined on the constructor's prototype. 
+
+3. The constructor is called: The constructor function is called with specified arguments and 'this' keyword is bound to newly created object.
+If no explicit return value is specified from the construtor , JS itself returns the newly created object.
+
+4. The new object is returned.
+*/
+
+
+// const user1=new createUser("chai",25);
+// const user2=new createUser("tea",250);
+
+// console.log(user1);
+// console.log(user2.increment());
