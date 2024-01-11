@@ -22,7 +22,7 @@ function user(username,loginCount,isLoggedIn){
 // to Avoid such overiding issues we have to make use of new keyword (Constructor function). 
 
 // new Keyword
-/* 1. Whenever you use 'new' keyword, an empty object is created which is called Instance.
+/* 1. Whenever you use 'new' keyword, an empty object is created.
    2. A Constructor function is invoked with a new keyword. And an empty object is being created inside a constructor function (abstracted).
    3. All 'this' keywords inside constructor func gets inject into an empty object. 
    4. After Execution, 'new' keyword returns back whole object to the instances. 
