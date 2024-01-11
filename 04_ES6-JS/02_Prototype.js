@@ -51,3 +51,41 @@ If no explicit return value is specified from the construtor , JS itself returns
 
 // console.log(user1);
 // console.log(user2.increment());
+
+
+
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------------
+let anotherUsername="ChaiAurCode           ";
+String.prototype.trueLength=function(){
+    console.log(`${this}`); // here this refers to String itself, because the prototype is of string and we know prototype in jS sets the Execution context. 
+    console.log(`True length is: ${this.trim().length}`);
+} 
+// anotherUsername.trueLength();
+// "Shikhar   ".trueLength();
+
+// linking of two object--> __proto__
+
+const user={
+    name:"chai",
+    email:"chai@gmail.com"
+}
+
+const teacher={
+    makeVideo: true
+}
+const TeachingSupport={
+    isAvailable:true,
+    __proto__:teacher
+}
+const TASupport={
+    makeAssignment:'JS assignment',
+    fullTime:true,
+    __proto__:TeachingSupport // old way of initializing
+}
+
+
+
+// Modern Syntax
+const user3=Object.setPrototypeOf(TASupport,TeachingSupport); // left hand-> caller,Right hand-> reciever.
+console.log(user3);
