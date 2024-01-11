@@ -61,7 +61,7 @@ const user4 = createUser(
   "Jaipur"
 );
 
-// console.log(user1.about()); // Shikhar is 22 years old. Although there is nothing like (about()) inside createUser function then also it is able to give the output which was expected, it is because of proto object concept. see at line 22.
+// console.log(user1.about()); // Shikhar is 22 years old. Although there is nothing like (about()) inside createUser function then also it is able to give the output which was expected, it is due to  proto object concept. see at line 26.
 // console.log(user2.about()); // Rashi is 24 years old.
 
 // console.log(user1); // User 1 info will be printed out in Object format and similarly for the rest of the user.
