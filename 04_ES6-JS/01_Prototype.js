@@ -2,7 +2,7 @@
 
 // Javascript function ==> function + object
 
-// you can add your own properties;
+// With Prototype you can add your own properties;
 
 // whenever we create a function , function gives us a free space which is called prototype.
 // Only functions provides Prototype property.
@@ -10,13 +10,15 @@
 // function hello(){
 //     console.log("hello world");
 // }
-// console.log(hello.prototype); // { empty }--> Object, this is a free space provided by function to prototype , to store the key value pair to be later used by function.
+// console.log(hello.prototype); // {  }--> Empty Object, this is a free space provided by a function to a prototype , to store the key value pair to be later used by function.
 const hello=function(){
     console.log("hello");
 }
+
 // if(hello.prototype){
 //     console.log("Prototype is present");
 // }
+
 // else {
 //     console.log("prototype is not present");
 // }
@@ -38,6 +40,7 @@ hello.prototype.sing=function(){ // adding function as a key value pair using pr
 //       return this.age >= 18;
 //     },
 //   };
+
   //single function
   function createUser(firstName, lastName, email, age, address) {
     const user = Object.create(createUser.prototype); // prototype property is passed as an argument .  syntax and as well as { } Empty object. Explanation of line-60 first js will see in user that there is something (createUser) is there or not, if it is not there, then it will check to its prototype , which in this case is createUser.prototype, which is passed as an argument and we know that it is define over there and from there it will return to the user. And that's how this prototype property works. !! Important for Interviews.
