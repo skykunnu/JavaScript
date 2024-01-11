@@ -43,7 +43,7 @@ function myApp() {
   // console.log(firstName);
 }
 
-// Using var you can print from outside the function, as var consider whole file as function scope.
+// Also, Using var you can print from outside the function , as var consider whole file as function scope.
 {
   var firstName = "Dikshant";
 }
