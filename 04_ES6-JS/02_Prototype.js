@@ -5,7 +5,8 @@
 // With Prototype you can add your own properties;
 
 // whenever we create a function , function gives us a free space which is called prototype.
-// Only functions provides Prototype property.
+// In Js, Each functions has Prototype property.
+// In JS, Each Object has Prototype Chain.
 
 // With arrow function you cannot use prototype property, becoz arrow function doesn't have their own 'this' keyword. this is the main reason they cannot use prototype property.  
 
