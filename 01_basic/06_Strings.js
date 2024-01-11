@@ -19,7 +19,7 @@ const anotherString = gameName.slice(2, 4); // it will print the value from (a,b
 // console.log(anotherString); // ik
 // const newStringOne="   Shikhar   "
 // console.log(newStringOne);
-// console.log(newStringOne.trim());
+// console.log(newStringOne.trim()); // trim function removes the spaces from both the end of string.
 
 const url = "https://flipkart.in";
 // console.log(url.replace('in','com')) // it is like replace this from this.
