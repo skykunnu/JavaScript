@@ -11,6 +11,8 @@
 // while the Regular function has a prototype property and the object has __proto__ property.
 
 /* Let's say we want to add multiple methods in createUser function from the userMethods object, but to do this it will take time and it's  a tedious work to do. So, To overcome this issue we have something known as __proto__ obejct concept. */
+// __proto__ ==> [[prototype]] (other way of representing proto object.)
+
 const userMethods = {
   about: function () {
     return `${this.firstName} is ${this.age} years old`;
