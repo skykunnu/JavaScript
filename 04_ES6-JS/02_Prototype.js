@@ -46,8 +46,8 @@ If no explicit return value is specified from the construtor , JS itself returns
 */
 
 
-// const user1=new createUser("chai",25);
-// const user2=new createUser("tea",250);
+const user3=new createUser("chai",25);
+const user4=new createUser("tea",250);
 
 // console.log(user1);
 // console.log(user2.increment());
@@ -87,5 +87,5 @@ const TASupport={
 
 
 // Modern Syntax
-const user3=Object.setPrototypeOf(TASupport,TeachingSupport); // left hand-> caller,Right hand-> reciever.
-console.log(user3);
+const user5=Object.setPrototypeOf(TASupport,TeachingSupport); // left hand-> caller,Right hand-> reciever.
+console.log(user5);
