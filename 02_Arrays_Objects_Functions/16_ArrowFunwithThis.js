@@ -1,5 +1,5 @@
 // Arrow function with this keyword
-/* In case of arrow function this keyword acts differently , means it points to outer environment object and outer environment object is Window object.  */
+/* In case of arrow function this keyword acts differently , means it points to the outer environment object and outer environment object is Window object.  */
 const user = {
   firstName: "Shikhar",
   Age: 22,
