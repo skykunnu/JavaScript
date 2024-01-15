@@ -5,16 +5,20 @@
 // Filter
 // reduce
 //-------------------------------------------------------------------------------------------------------------------
-//1. forEach- It does'nt return anything.
+//1. forEach- It is used to iterate over elements in an array and execute a provided function once for each array element & does'nt return anything.
 const coding = ["JS", "Java", "Cpp", "Go", "Rust", "Python"];
 
 //Syntax for forEach Method using simple function.
-coding.forEach(function (Languages, index, Array) {
-  // console.log(Languages, index, Array);
+coding.forEach(function (currentValue, index, Array) {
+  /* 1. currentValue--> the current element being processed in the array.
+    2. index--> the index of the current element being processed.
+    3. Array--> the array on which forEach was called.
+    */
+  // console.log(currentValue, index, Array); // JS 0 [ 'JS', 'Java', 'Cpp', 'Go', 'Rust', 'Python' ]
 });
 
 // using arrow function
-coding.forEach((Languages, index, Array) => {
+coding.forEach((currentValue, index, Array) => {
   /* In ForEach method we can pass index as well as whole array also. */
   // console.log(Languages, index, Array);
 });
@@ -35,10 +39,10 @@ const Coding = [
 ];
 
 Coding.forEach((item) => {
-  console.log(item.LanguageName); //--> Prints all the LanguageName of the objects defined inside the array.
+  //console.log(item.LanguageName); //--> Prints all the LanguageName of the objects defined inside the array.
 });
 //----------------------------------------------------------------------------------------------------------------------------------
-// Map method
+// Map method--> It is used to create a new array by applying a provided function to each element of an existing array.
 const numbers = [1, 2, 3, 4];
 
 /* Using Simple function*/
@@ -55,7 +59,7 @@ const squareNumber = numbers.map((number, index) => {
 
 //---------------------------------------------------------------------------------------------------------------
 
-// filter Method
+// filter Method--> it is used to create a new array containing element that satisfy a specified condition.
 const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 const NewNums = myNums.filter((num) => num % 2 == 0); // if you are not using curly braces, then there is no need to write return num%2==0.
@@ -63,8 +67,8 @@ const NewNums = myNums.filter((num) => num % 2 == 0); // if you are not using cu
 
 //----------------------------------------------------------------------
 
-//Reduce method--> It just do the sum and return it.
-
+//Reduce method--> It is used to reduce an array into a single value. 
+/* It can also be used to do sum or product of the array. */ 
 const Numbers = [1, 2, 3, 4, 5, 10];
 // aim: to sum of all numbers in an array.
 const sum = Numbers.reduce((accumulator, currentValue) => {
@@ -92,7 +96,7 @@ const totalAmount = userCart.reduce((totalPrice, currentProduct) => {
   return totalPrice + currentProduct.price;
 }, 0);
 
-console.log(totalAmount);
+// console.log(totalAmount);
 
 // totalPrice         currentProduct          return
 //   0                   12000                12000
