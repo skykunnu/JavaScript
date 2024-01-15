@@ -51,7 +51,8 @@ myApp();
 
 //----------------------------------------------------------------------------------------------------------------------------
 
-// rest Parameters 
+// Rest Parameters 
+/* A function can only have one rest parameter, and the rest parameter is the last parameter in the function. */ 
 
 function myFunc(a, b, ...c) {
   // using 3 dots remaining variable other than a & b are stored in c as an array.
