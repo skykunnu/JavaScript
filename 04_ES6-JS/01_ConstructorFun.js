@@ -18,7 +18,7 @@ function user(username,loginCount,isLoggedIn){
 // const User1=user("Shikhar",12,true);
 // const User2=user("harshit",20,true);
 // console.log(User1); // Output shall be windows object and inside the windows object it will have all the input parameters
-// but after initializing new user (User-2) and then taking log of User1 we found that values of user1 got overided by the User2. So therefore it is a big issue in itself.
+// but after initializing new user (User-2) and then taking log of User1 we found that values of user1 got overided by the User2. Hence it is a big issue in itself.
 // to Avoid such overiding issues we have to make use of new keyword (Constructor function). 
 
 // new Keyword
