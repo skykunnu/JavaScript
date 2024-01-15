@@ -84,8 +84,9 @@ const TASupport={
     __proto__:TeachingSupport // old way of initializing
 }
 
+// teacher.__proto__=user;
 
 
 // Modern Syntax
 const user5=Object.setPrototypeOf(TASupport,TeachingSupport); // left hand-> caller,Right hand-> reciever.
-console.log(user5);
+// console.log(user5);
