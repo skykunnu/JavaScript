@@ -42,7 +42,7 @@ let fullName = function (arg1, arg2) {
 
 //------------------------------------------------------------------------
 // Apply method-
-//This works in similar way as call do but the only difference between of them is of arguments only, instead of passing only arguments in call method, you can pass the array of arguments in apply method.
+//This works in similar way as call do but the only difference between both of them is of arguments only, instead of passing only arguments in call method, you can pass the array of arguments in apply method.
 
 let skills = ["Programmer", "Consultant"];
 // fullName.apply(name, skills); // Shikhar Khandelwal is a Programmer and Consultant. // or fullName.apply(name, ["Programmer","Consultant"]).
