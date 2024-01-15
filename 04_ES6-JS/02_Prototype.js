@@ -76,7 +76,7 @@ const teacher={
 }
 const TeachingSupport={
     isAvailable:true,
-    __proto__:teacher
+  
 }
 const TASupport={
     makeAssignment:'JS assignment',
