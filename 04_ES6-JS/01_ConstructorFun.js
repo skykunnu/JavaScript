@@ -1,4 +1,4 @@
-// Constructor Function --> Important for interviews. (Allows you to make multiple instances from single object).
+// Constructor Function --> Important for interviews. (Allows you to make multiple instances from a single object).
 
 
 /*They are used to create objects based on a template (in this case, the 'user' function). */
