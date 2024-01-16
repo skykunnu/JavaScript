@@ -1,16 +1,18 @@
-class Person{
-    constructor(firstName,LastName,age){
-        this.firstName=firstName;
-        this.LastName=LastName;
-        this.age=age;
+class User{
+    constructor(email,password){
+        this.email=email;
+        this._password=password;
     }
-    get fullName(){ 
-        return `${this.firstName} ${this.LastName}`;
+    get password(){
+       return `${this._password.toUpperCase()} shikhar`;
+    }
+    set password(value){
+        this._password=value;
     }
 }
 
-const person1=new Person("Shikhar","Khandelwal",23);
-// console.log(person1.fullName()); // Shikhar khandelwal
-
-// To use fullname as property rather than method.
-console.log(person1.fullName);// this will return whole function without using get and with get it will return Shikhar Khandelwal.
+// The use of Underscore is to avoid name collision. first the password is changed to _password to avoid name collision with the getter and setter. 
+const Shikhar=new User("shikhar@gmail.com","abc");
+console.log(Shikhar.password); // this will print the old value ABC shikhar
+Shikhar.password="cde";
+console.log(Shikhar.password); // this will print the new value CDE shikhar
