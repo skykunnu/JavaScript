@@ -3,10 +3,10 @@ class User{
         this.email=email;
         this._password=password;
     }
-    get password(){
+    get password(){ // it gets the modified value.
        return `${this._password.toUpperCase()} shikhar`;
     }
-    set password(value){
+    set password(value){ // It sets the new value.
         this._password=value;
     }
 }
