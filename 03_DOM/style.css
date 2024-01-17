@@ -10,7 +10,7 @@ body{
 }
 a{
     text-decoration: none;
-    color: darkred;
+    color: white;
 }
 .header{
     min-height: 60vh;
@@ -19,6 +19,9 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+}
+.logo{
+    color: whitesmoke;
 }
 .container{
     max-width: 1200px;
@@ -44,12 +47,15 @@ position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%,-50%); /* # */
+color: white;
 }
 .btn{
     display: inline-block;
     outline: none;
     border: none;
     cursor: pointer;
+    border-radius: 1rem;
+  
 }
 .btn-headline{
     padding: 1rem 2rem;
@@ -85,6 +91,39 @@ font-weight: bold;
 }
 
 .section-signup{
-    margin-top: 5rem;
+    margin: 5rem auto;
+    text-align: center;
+    background-color: rgb(240,240,240);
+    border-radius: 10px;
+    padding: 1rem;
     
+}
+.signup-form{
+    max-width: 800px;
+    width: 95%;
+    text-align: left;
+    margin: auto;
+}
+.signup-form label{
+display: block;
+}
+.signup-form input{
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+}
+.form-group{
+    margin-top: 1rem;
+}
+.signup-form textarea{
+    width: 100%;
+}
+
+.signup-btn{
+    background-color: rgb(44,55,63);
+    margin: auto;
+    color: white;
+    padding: 1rem 2rem;
+    display: block;
+    margin-top: 1rem;
 }
