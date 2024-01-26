@@ -101,9 +101,9 @@ textContent and innertext
 
 const headline=document.querySelector(".headline")
 // console.log(headline.innerHTML); // All elements under headline will get printed out. 
-headline.innerHTML="<h1> InnerHTML Changed </h1>";
-headline.innerHTML+="<button class=\"btn\">Learn More</button>"
-console.log(headline.innerHTML);
+// headline.innerHTML="<h1> InnerHTML Changed </h1>";
+// headline.innerHTML+="<button class=\"btn\">Learn More</button>" // Plus Symbol is added, So that previous same variable is also executed with current same variable.  
+// console.log(headline.innerHTML);
 
 
 
