@@ -12,6 +12,11 @@ a{
     text-decoration: none;
     color: white;
 }
+.bg-dark{
+    background: black;
+    color: #ffff;
+}
+/* browser render css from top to bottom  */
 .header{
     min-height: 60vh;
     background: url(./bg-image.jpg);
