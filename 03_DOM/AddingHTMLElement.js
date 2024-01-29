@@ -32,5 +32,5 @@
 const newTodoItem=document.createElement("li");
 newTodoItem.textContent="Todo 2";
 const TodoList=document.querySelector(".todo-list");
-TodoList.before(newTodoItem); // Todo 2 will print before the TodoList.
-TodoList.after(newTodoItem); // Todo 2 will print after the TodoList. 
+// TodoList.before(newTodoItem); // Todo 2 will print before the TodoList.
+// TodoList.after(newTodoItem); // Todo 2 will print after the TodoList. 
