@@ -103,9 +103,19 @@ font-weight: bold;
 .todo-list li{
     padding: 0.7rem;
     background: #4444;
-    color: red;
+    color: #3f3f3f;
     margin-top: 1rem;
     text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.todo-btn{
+    padding: 0.5rem 1rem;
+    font-size: 1;
+    font-weight: bold;
+    cursor: pointer;
+
 }
 .section-signup{
     margin: 5rem auto;
