@@ -46,8 +46,59 @@
 
 
 // Event Object
-const firstbutton=document.querySelector("#one");
-firstbutton.addEventListener("click",function(Event){ // the function will take an event as an input.
-    console.log(Event); // return an object name as Pointer Event.
-})
+// const firstbutton=document.querySelector("#one");
+// firstbutton.addEventListener("click",function(Event){ // the function will take an event as an input.
+//     console.log(Event); // return an object name as Pointer Event.
+// })
+
+
+
+/* whenever we add event listner to an element 
+then browser comes to know that event is being perform, 
+browser will perform two things.
+
+1. it will give callback function to js engine.
+2. with callback function whatever event is being performed , its information will be given in terms of an object.
+*/
+
+
+// Current target and target
+/* target--> which element triggered our event
+   Current target--> which element we attached our eventlistner. 
+*/
+
+
+
+
+// Behind the scenes of Events
+/* 
+Browser-->  JS Engine(V8)-{V8 translates js code directly into machine code} + WebApi
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
