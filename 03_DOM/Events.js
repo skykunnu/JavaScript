@@ -43,3 +43,11 @@
 // });
 
 //------------------------------------------------------------------------------------------------------
+
+
+// Event Object
+const firstbutton=document.querySelector("#one");
+firstbutton.addEventListener("click",function(Event){ // the function will take an event as an input.
+    console.log(Event); // return an object name as Pointer Event.
+})
+
