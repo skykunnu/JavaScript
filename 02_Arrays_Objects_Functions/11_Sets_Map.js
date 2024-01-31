@@ -77,3 +77,8 @@ const Male = {
 const People = new Map();
 People.set(Male, { age: 27, id: 1 }); // here Male object is associating with some additional info (age & id).
 console.log(People.get(Male).id); // Here, you use the get method of the People Map to retrieve the value associated with the key Male, which is the object { age: 27, id: 1 }. Then, you access the id property of this object and log it to the console. So, it will output 1.
+
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Weak map
