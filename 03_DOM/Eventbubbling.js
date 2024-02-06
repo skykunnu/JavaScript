@@ -1,10 +1,9 @@
-// event bubbling/Propogation
-// event capturing
-// event delegation
+// Event bubbling/Propogation --> (Flow of Execution goes from child to parent).
+// Event capturing -->(Flow of Execution goes from parent to child)
+// Event delegation
 
-//The flow goes like--> Capturing->bubbling->
-
-
+// stopPropagation--> it stops child to go to his parent element.
+// stopImmediatePropagation--> 
 const grandparent=document.querySelector(".grandparent");
 // const parent=document.querySelector(".parent");
 // const child=document.querySelector(".child");
@@ -12,7 +11,8 @@ const grandparent=document.querySelector(".grandparent");
 
 //Below is the concept of event bubbling.
 
-// child.addEventListener("click",()=>{
+// child.addEventListener("click",(event)=>{
+    //    event.stopPropagation(); // it will restrict child to go to his parents.
 //     console.log("bubbling on child");
 // })
 
@@ -28,6 +28,9 @@ const grandparent=document.querySelector(".grandparent");
 // })
 
 // Capturing Events--> (by making third argument of addEventListner as true.)
+
+
+
 // child.addEventListener("click",()=>{
 //     console.log("Captured!!!!! on child");
 // },true)
