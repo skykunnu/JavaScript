@@ -3,12 +3,12 @@
 // Javascript is synchronous single threaded
 
 
-//synchronus programming --> one by one (first one task will be finished and then another task will be finished)
-// console.log("Script start");
-// for(let i=1;i<10000;i++){
-//     console.log("inside for loop");
-// }
-// console.log("Script end");
+//synchronus programming --> one by one (first one task will be finished and then another task will be executed.)
+console.log("Script start");
+for(let i=1;i<10000;i++){
+    console.log("inside for loop");
+}
+console.log("Script end");
 
 
 // on Consoling above code,  the output is -->
@@ -27,7 +27,7 @@ const timeout=setTimeout(()=>{
     console.log("hello");
 }, 1000); // (function you want to run, time after which you want to run the function(milisec))
 clearTimeout(timeout); // with this statement it will stop the execution of setTimeout function. 
-console.log("Script end");
+console.log("script end");
 
 // On Consoling above code, the output-->
 /*
