@@ -6,7 +6,7 @@
 // }
 
 
-// myFunc(()=>{
+// myFunc(()=>{ // callback function
 //     console.log("Function is doing some task 2");
 // });
 
