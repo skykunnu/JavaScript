@@ -1,5 +1,8 @@
 // Callbacks in Synchronous Programming
 
+/* It is a function passed as an argument to another function and is intended to be
+executed at a later time or under certain conditions.*/
+
 // function myFunc(Callback){ // here we have passed callback as a parameter in a function that will invoke some other function. 
 //     console.log("Function is doing some task 1");
 //     Callback();
@@ -23,13 +26,15 @@
 // }
     
 // }
-// /* No Need to make a extra function */
-// // function addTwoNumbers(num1,num2){
-// //     console.log(num1+num2);
-// // }
+/* No Need to make a extra function */
+// function addTwoNumbers(num1,num2){
+//     console.log(num1+num2);
+// }
+
+// getTwoNumbersAndadd(4,5,addTwoNumbers); 
 
 // getTwoNumbersAndadd(4,5,(num1,num2)=>{
-//     console.log(num1+num2);
+// console.log(num1+num2);
 // });
 
 //using two callbacks--> onSuccess & onFailure
@@ -73,6 +78,7 @@ const heading7=document.querySelector(".heading7");
 
 
 //callback Hell--> Nested callbacks.
+/*
 setTimeout(()=>{
     heading1.textContent="One"
     heading1.style.color="violet"
@@ -101,10 +107,43 @@ setTimeout(()=>{
         },1000)
     },1000)
 },1000);
+*/
+ // Lets do the above task using a function.
+ //using onSuccessCallback and onFailureCallback
 
+function changeText(element,text,color,time,onSuccessCallback,onFailureCallback){
+    setTimeout(()=>{
+  if(element){
+    element.textContent=text;
+    element.style.color=color;
+    if(onSuccessCallback){
+        onSuccessCallback();
+    }
+  }
+  else{
+    if(onFailureCallback){
+        onFailureCallback();
+    }
+    
+  }
+    },time)
+}
 
-
-
+//Pyramid of doom
+changeText(heading1,"one","green",1000,()=>{
+    changeText(heading2,"two","violet",2000,()=>{
+        changeText(heading3,"three","red",1000,()=>{
+            changeText(heading4,"four","blue",2000,()=>{
+                changeText(heading5,"five","purple",1000,()=>{
+                    changeText(heading6,"six","orange",2000,()=>{
+                        changeText(heading7,"seven","brown",1000,()=>{
+                        },()=>{console.log("Heading7 does'nt exist");})
+                    },()=>{console.log("Heading6 does'nt exist");})
+                },()=>{console.log("Heading5 does'nt exist");})
+            },()=>{console.log("Heading4 does'nt exist");})
+        },()=>{console.log("Heading3 does'nt exist");})
+    },()=>{console.log("Heading2 does'nt exist");})
+},()=>{console.log("Heading1 does'nt exist");})
 
 
 

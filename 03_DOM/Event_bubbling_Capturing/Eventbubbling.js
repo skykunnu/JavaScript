@@ -54,7 +54,7 @@
 
 
 /*Event delegation--> Event delegation is a design pattern in JavaScript where instead of attaching event listeners directly to individual elements,
- you attach them to a parent element and use that parent element to listen for events that bubble up from its descendants.
+ We attach them to a parent element and use that parent element to listen for events that bubble up from its descendants.
 */
 
 // it also works on the same concept as bubbling do ( from inside to outside)
