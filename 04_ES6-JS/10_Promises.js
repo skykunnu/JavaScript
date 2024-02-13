@@ -20,16 +20,16 @@ else{
 // Consumption of promise--> it will be consumed by the browser.
 /*.then method is executed when promise is resolved.*/
 
-friedRicePromise.then((myfriedrice)=>{
-    // when your promise is resolved.
-    console.log("lets eat", myfriedrice);
-})
-.
-/* .catch method is executed when promise is rejected.*/
-catch((error)=>{
-    // when your promise gets rejected.
-console.log(error);
-})
+// friedRicePromise.then((myfriedrice)=>{
+//     // when your promise is resolved.
+//     console.log("lets eat", myfriedrice);
+// })
+// .
+// /* .catch method is executed when promise is rejected.*/
+// catch((error)=>{
+//     // when your promise gets rejected.
+// console.log(error);
+// })
 
 // for (let index = 0; index < 100; index++) {
 //     console.log(index);
@@ -43,6 +43,7 @@ console.log(error);
 /* Function returning promise */
 
 function ricePromise(){
+    const bucket=['coffee','chips','vegetables','rice','salt'];
     return new Promise((resolve,reject)=>{
         if(bucket.includes("vegetables") && bucket.includes("salt") && bucket.includes("rice")){
             resolve({value:"fried rice"}); // It can be any value like string,number,array,object.
@@ -53,3 +54,13 @@ function ricePromise(){
         })
 }
 
+ricePromise().then((friedrice)=>{
+    // when your promise is resolved.
+    console.log("lets eat", friedrice);
+})
+.
+/* .catch method is executed when promise is rejected.*/
+catch((error)=>{
+    // when your promise gets rejected.
+console.log(error);
+})
