@@ -1,5 +1,9 @@
 //  Intro to Promises. (It works Asynchronously and it is the feature of browser not js.)
 // Promise--> It represents future value.
+//then method always return promise.
+
+
+
 
 // console.log("Scripts starts.");
 const bucket=['coffee','chips','vegetables','rice','salt'];
@@ -58,9 +62,9 @@ ricePromise().then((friedrice)=>{
     // when your promise is resolved.
     console.log("lets eat", friedrice);
 })
-.
+
 /* .catch method is executed when promise is rejected.*/
-catch((error)=>{
+.catch((error)=>{
     // when your promise gets rejected.
 console.log(error);
 })
