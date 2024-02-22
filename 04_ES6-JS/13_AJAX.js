@@ -17,10 +17,38 @@ without interfering with the display and behaviour of the existing page.
 */
 //----------------------------------------------------------------------------------------
 
-const xhr =new XMLHttpRequest();
+let fetchBtn=document.getElementById("fetchBtn");
 
-console.log(xhr);
+fetchBtn.addEventListener("click",buttonClickHandler);
+function buttonClickHandler(){
+    console.log("you have clicked the fetchbtn");
 
+    // Instantiate an xhr object
+    const xhr = new XMLHttpRequest();
+   //open the object
+   xhr.open('GET','shikhar.txt',true); // open means from where you will bring the data, what type of request it will be , GET--> means will give an URL and in return will get the data from URL,true--> means asynchronous (no blocking)
+// if false would be there at the place of true then it will block the further requests and code.
+   // what to do on progress (Optional)
+   xhr.onprogress=()=>{
+    console.log('On Progress');
+   }
 
+//    xhr.onreadystatechange=()=>{
+//     console.log("ready state is",xhr.readyState);
+//    }
+// what to do when response is ready
+   xhr.onload=()=>{
+    // used to check whether item is present or not.
+    if(xhr.status===200){
+        console.log(xhr.responseText);
+        
+    }
+    else{
+        console.log("Some error occured");
+    }
+   }
 
+   // send the request
+  xhr.send();
 
+}
