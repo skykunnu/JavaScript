@@ -1,0 +1,39 @@
+{
+    "users":[
+        {
+            "name": "Shikhar Khandelwal",
+            "age": "23",
+            "isProgrammer":true,
+            "skills":["HTML","CSS","JavaScript"],
+            "address":{
+                "city":"Jaipur",
+                "State":"Rajasthan",
+                "Country":"India"
+            }
+        },
+        {
+            "name": "Yash Garg",
+            "age": "21",
+            "isProgrammer":true,
+            "skills":["HTML","CSS","JavaScript"],
+            "address":{
+                "city":"Meerut",
+                "State":"Uttar Pradesh",
+                "Country":"India"
+            }
+        },
+        {
+            "name": "Harshit Vashishtha",
+            "age": "21",
+            "isProgrammer":true,
+            "skills":["HTML","CSS","JavaScript"],
+            "address":{
+                "city":"Meerut",
+                "State":"Uttar Pradesh",
+                "Country":"India"
+            }
+        }
+    ]
+    
+
+}

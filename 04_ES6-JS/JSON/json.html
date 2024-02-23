@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+    <link rel="stylesheet" href="./json.css">
+</head>
+<body>
+    <h1>JSON USER LIST</h1>
+    <ul></ul>
+    <script>
+        let users={
+    "users":[
+        {
+            "name": "Shikhar Khandelwal",
+            "age": "23",
+            "isProgrammer":true,
+            "skills":["HTML","CSS","JavaScript"],
+            "address":{
+                "city":"Jaipur",
+                "State":"Rajasthan",
+                "Country":"India"
+            }
+        },
+        {
+            "name": "Yash Garg",
+            "age": "21",
+            "isProgrammer":true,
+            "skills":["HTML","CSS","JavaScript"],
+            "address":{
+                "city":"Meerut",
+                "State":"Uttar Pradesh",
+                "Country":"India"
+            }
+        },
+        {
+            "name": "Harshit Vashishtha",
+            "age": "21",
+            "isProgrammer":true,
+            "skills":["HTML","CSS","JavaScript"],
+            "address":{
+                "city":"Meerut",
+                "State":"Uttar Pradesh",
+                "Country":"India"
+            }
+        }
+    ]
+}
+let userString=`{"users":[{"name":"Shikhar Khandelwal","age":"23","isProgrammer":true,"skills":["HTML","CSS","JavaScript"],"address":{"city":"Jaipur","State":"Rajasthan","Country":"India"}},{"name":"Yash Garg","age":"21","isProgrammer":true,"skills":["HTML","CSS","JavaScript"],"address":{"city":"Meerut","State":"Uttar Pradesh","Country":"India"}},{"name":"Harshit Vashishtha","age":"21","isProgrammer":true,"skills":["HTML","CSS","JavaScript"],"address":{"city":"Meerut","State":"Uttar Pradesh","Country":"India"}}]}`
+console.log(JSON.parse(userString)); // Process of converting string data into json object.
+console.log(JSON.stringify(users)); // Process of converting data into string format.
+
+    //     let list="";
+    //     let users="";
+    //   fetch('https://jsonplaceholder.typicode.com/todos')
+    //   .then(response=> response.json())
+    //   .then(json=>{
+    //     // users=json;
+    //     json.forEach(todo => {
+    //         list+=`<li>${todo.title}</li>`
+    //     });
+    //     document.querySelector("ul").innerHTML=list;
+    //     console.log(json);
+    // });
+    </script>
+</body>
+</html>
