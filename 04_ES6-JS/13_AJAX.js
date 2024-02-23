@@ -13,7 +13,7 @@ without interfering with the display and behaviour of the existing page.
 # We have 3 most common ways to create and send request to server
 1. XML HTTP Request (Old way of doing)
 2. Fetch API (new way of doing) (ES6)
-3. axios (this is third party library)
+3. Axios (this is a third party library)
 */
 //----------------------------------------------------------------------------------------
 
@@ -26,17 +26,24 @@ function buttonClickHandler(){
     // Instantiate an xhr object
     const xhr = new XMLHttpRequest();
    //open the object
-   xhr.open('GET','shikhar.txt',true); // open means from where you will bring the data, what type of request it will be , GET--> means will give an URL and in return will get the data from URL,true--> means asynchronous (no blocking)
+//    xhr.open('GET','https://jsonplaceholder.typicode.com/todos/1',true); // open means from where you will bring the data, what type of request it will be , GET--> means will give an URL and in return will get the data from URL,true--> means asynchronous (no blocking)
 // if false would be there at the place of true then it will block the further requests and code.
+   
+
+   // Use this for POST Request
+   xhr.open('POST','https://dummy.restapiexample.com/api/v1/create',true);
+   xhr.getResponseHeader('Content-type','application/json'); // You are sending the form data in URL itself.
+   
+   
+   
    // what to do on progress (Optional)
    xhr.onprogress=()=>{
     console.log('On Progress');
    }
-
+// what to do when response is ready--> start onload method.
 //    xhr.onreadystatechange=()=>{
 //     console.log("ready state is",xhr.readyState);
 //    }
-// what to do when response is ready
    xhr.onload=()=>{
     // used to check whether item is present or not.
     if(xhr.status===200){
@@ -49,6 +56,8 @@ function buttonClickHandler(){
    }
 
    // send the request
-  xhr.send();
 
+  params= `{"name":"test","salary":"123","age":"23"}`;
+  xhr.send(params);
+  console.log("we are done");
 }
