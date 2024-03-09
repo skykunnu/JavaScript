@@ -8,7 +8,7 @@ function Add(a){
         }
     }
 }
-console.log(Add(2)(3)(4));
+// console.log(Add(2)(3)(4));
 
 
 // Practical Example
@@ -23,4 +23,4 @@ function sendAutoEmail(to){
 let step1=sendAutoEmail("skykunnu@gmail.com");
 let step2=step1("New Order Confirmation"); // Using previous function to get the output
 step2("Hey Shikhar, Here is something for you"); // Again using previous function to get the output.
-
+// Output of the above statement--> (Sending Email to skykunnu@gmail.com with subject New order Confirmation Hey Shikhar, Here is something for you).
