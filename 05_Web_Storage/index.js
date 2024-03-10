@@ -31,6 +31,7 @@ Local Storage--> It stores the data that won't expire.
 
 /* Cookies-> It is also one of the way to store a data in a browser. 
 Much older than local and session storage. but rarely used due to its smaller capacity. 
+To use cookie --> document.cookie (key value pair only). 
 */
 
 
