@@ -36,13 +36,13 @@ To use cookie --> document.cookie (key value pair only).
 //----------------------------------------------------------------------------------------------------
 
 localStorage.setItem("Name","Shikhar");
-console.log(localStorage.getItem("Name"));
+console.log(localStorage.getItem("Name")); // Shikhar
 localStorage.removeItem("Name");
 
 
 sessionStorage.setItem("name","Prakhar");
-
-
+sessionStorage.setItem("Name","yash");
+console.log(sessionStorage.getItem("name")); // Prakhar
 
 
 
