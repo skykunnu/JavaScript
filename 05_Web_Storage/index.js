@@ -40,7 +40,7 @@ console.log(localStorage.getItem("Name"));
 localStorage.removeItem("Name");
 
 
-
+sessionStorage.setItem("name","Prakhar");
 
 
 
