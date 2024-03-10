@@ -1,3 +1,5 @@
+// 3 Ways to store data inside of a browser.  
+
 /*LocalStorage--> It is a Property that allows JavaScript sites and apps to save key-value pairs in a web browser with no expiration date. 
 This means the data stored remain as it is even after the user closes the browser or restarts the computer.*/
 
@@ -25,6 +27,10 @@ Local Storage--> It stores the data that won't expire.
 4. clear():- Clear all data from Local Storage. 
 5. key():- passed a number to retrieve the key of a local Storage. 
 
+*/
+
+/* Cookies-> It is also one of the way to store a data in a browser. 
+Much older than local and session storage. but rarely used due to its smaller capacity. 
 */
 
 
