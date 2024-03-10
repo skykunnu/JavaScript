@@ -33,7 +33,11 @@ Local Storage--> It stores the data that won't expire.
 Much older than local and session storage. but rarely used due to its smaller capacity. 
 To use cookie --> document.cookie (key value pair only). 
 */
+//----------------------------------------------------------------------------------------------------
 
+localStorage.setItem("Name","Shikhar");
+console.log(localStorage.getItem("Name"));
+localStorage.removeItem("Name");
 
 
 
