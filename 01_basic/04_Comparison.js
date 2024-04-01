@@ -13,7 +13,7 @@ that's why null >=0 is true and null>0 is false.
 
 //=== (Strict check)
 console.log("2" == 2); //true because equality operator converts the operands of different types to number.
-console.log("2" === 2); //false because strict equal don't change the datatype. ! Recommend to use wherever there is comparison needed.
+console.log("2" === 2); //false because strict equality operator don't change the datatype. ! Recommend to use wherever there is comparison needed.
 
 // != vs !==
 console.log("7" != 7); // false, because as both of them have same values. No matter whatever the datatype is.
