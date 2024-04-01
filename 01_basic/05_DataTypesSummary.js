@@ -29,6 +29,7 @@ const myFunction = function () {
 // console.log(typeof bigNumber); // undefined.
 // console.log(typeof myFunction); // function object.
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Memory management
 
 // Stack(Primitive), Heap(Non-Primitive)
 
