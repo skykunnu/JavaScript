@@ -1,8 +1,10 @@
 // Ternary Operator
+
+// ---------------------------
+// if-else Operator
+// ---------------------------
+
 /*
----------------------------
-if-else Operator
----------------------------
 let age = 4;
 let drink;
 if (age >= 5) {
@@ -12,7 +14,6 @@ if (age >= 5) {
 }
 console.log(drink);
 */
-
 /* Structure of ternary operator
 let age = 3;
 let drink = age >= 5 ? "coffee" : "milk";
