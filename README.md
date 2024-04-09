@@ -1,3 +1,3 @@
 # Javascript
 
-Code Repo of JavaScript Codes.
+Code Repo of JavaScript Topics.
