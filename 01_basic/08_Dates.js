@@ -45,7 +45,7 @@ let myTimeStamp = Date.now();// returns the numeric value corresponding to the c
 let newDate = new Date().toLocaleString("default", { // define the date according to your Customization.
   weekday: "long",
 }); 
-console.log(newDate);
+// console.log(newDate); //It will print the day in long format like:- Tuesday,Wednesday. 
 
 
 
