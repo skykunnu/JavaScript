@@ -27,4 +27,4 @@ const url = "https://flipkart.in";
 // console.log(gameName.split('-')); // change the dash with array.
 const string1 = "12";
 const string2 = "10";
-console.log(+string1 + +string2); // 22. because plus operator in front of both the strings converted the string into number.
+console.log(+string1 + +string2); // 22. because unary(+) operator in front of both the strings converts the string into number.
