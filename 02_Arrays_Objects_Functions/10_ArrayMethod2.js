@@ -32,7 +32,7 @@ const Numbers = [2, 4, 6, 8, 10];
 const Ans = Numbers.every((number) => number % 2 === 0);
 // console.log(Ans); // true as all elements are even.
 // callback function ---> boolean
-// every method ---> boolean (it will return true if all numbers of the array is even, if any one of them turns out be odd it will print false.) * Subject to condition.
+// every method ---> boolean (it will return true if all the elements of the array are even, if anyone turns out be odd it will print false.) * Subject to condition.
 
 //------------------------------------------------------------
 
