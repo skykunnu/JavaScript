@@ -42,7 +42,7 @@ const numbers = [3, 5, 11, 9]; // or [3,5,8,9]
 
 // If any one of the elements of an array is even it will return true or else false.
 
-// In general if the below condition gets satisfy on any element of the array it will return true or else false.
+// In general if the below condition gets satisfy on any one element of the array it will return true or else false.
 
 const ans1 = numbers.some((numbers) => numbers % 2 === 0);
 // console.log(ans1); // Boolean (true/false).
