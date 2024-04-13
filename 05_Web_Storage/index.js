@@ -76,22 +76,25 @@ const ageInput=document.querySelector('.age');
 
 const myData=JSON.parse(localStorage.getItem('myData')) || {}; 
 
+// This below statement will store the data even after closing the application.
+nameElement.innerText=myData.myName;
+ageElement.innerText=myData.age;
 
 nameInput.addEventListener('input',(e)=>{
   myData.myName=e.target.value;
   localStorage.setItem('myData',JSON.stringify(myData)); // Converting myData object into string using JSON.Strongify and vice-versa using JSON.Parse.
-  // const parsedName=JSON.parse(localStorage.getItem('myData')); // Converting myData back to object using JSON.parse.
-  // nameElement.innerText=parsedName.myName;
-  // nameElement.innerText=myData.myName; --> Also Right, but not recommended. 
+  const parsedName=JSON.parse(localStorage.getItem('myData')); // Converting myData back to object using JSON.parse.
+  nameElement.innerText=parsedName.myName;
+  // nameElement.innerText=myData.myName; //--> Also Right. both parsed and this will give same answer. 
 })
 
 
 ageInput.addEventListener('input',(e)=>{
     myData.age=e.target.value;
     localStorage.setItem('myData',JSON.stringify(myData));
-    // const parsedAge=JSON.parse(localStorage.getItem('myData'));  
-    // ageElement.innerText=parsedAge.age;
-    // ageElement.innerText=myData.age; --> Also Right, but not recommended.
+    const parsedAge=JSON.parse(localStorage.getItem('myData'));  
+    ageElement.innerText=parsedAge.age;
+    //  ageElement.innerText=myData.age;// --> Also Right.
 })
 
 
