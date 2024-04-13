@@ -34,13 +34,16 @@ Much older than local and session storage. but rarely used due to its smaller ca
 To use cookie --> document.cookie (key value pair only). 
 */
 //----------------------------------------------------------------------------------------------------
+
+/* Using Strings */
+
 const nameElement=document.querySelector('.name-tag');
 const nameInput=document.querySelector('.name');
 const ageElement=document.querySelector('.age-tag');
 const ageInput=document.querySelector('.age'); 
 
 
-/* Using Strings */
+
 
 // nameElement.innerText=localStorage.getItem('myName');
 
@@ -65,6 +68,8 @@ const ageInput=document.querySelector('.age');
 
 
 /* Using Objects */
+
+
 // This is a fixed structure with predefined properties. It is appropriate to use when you have fixed data structure and you don't need to preserve exisitng data. 
 
 /* const myData={   
@@ -77,8 +82,8 @@ const ageInput=document.querySelector('.age');
 const myData=JSON.parse(localStorage.getItem('myData')) || {}; 
 
 // This below statement will store the data even after closing the application.
-nameElement.innerText=myData.myName;
-ageElement.innerText=myData.age;
+// nameElement.innerText=myData.myName;
+// ageElement.innerText=myData.age;
 
 nameInput.addEventListener('input',(e)=>{
   myData.myName=e.target.value;
