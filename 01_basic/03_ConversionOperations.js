@@ -37,6 +37,9 @@ let str_2 = "Khandelwal";
 // console.log(+"");  // 0 , because empty string is coerced into number.
 // console.log("1"-"1"-"1"-2); // -3 because the "-" operator (converts a string to num) and type coercion takes place from left to right.
 // console.log("2" * "3"); // 6, because multiplication operator will convert string into number first & then multiply it. type coercion.
+// console.log("1" - - "1"); // 2, because unary negation operator "-" converts non numeric value to numeric and then apply sign to it. so it becomes (1-(-1)).
+// console.log("B" + "a" + + "a" + "a"); // BaNaNa, left most binary operands will be concat & becomes (Ba) & then unary plus operator will convert string to number
+// since a is not a number, so it becomes Nan(not a number) and concats with last a remaining.
 
 let num1, num2, num3;
 num1 = num2 = num3 = 2 + 2;
