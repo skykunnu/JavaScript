@@ -37,21 +37,47 @@ global lexical environment and again there was no b there, suppose we never decl
 and it finds Null and hence the searching stops as we found out null.
 
 */
-
-
-function a(){
-  var b=10;
-  c();
-  function c(){
-      console.log(b);
-  }
-  }
-  a();
+// function a(){
+//   var b=10;
+//   c();
+//   function c(){
+//       console.log(b);
+//   }
+//   }
+//   a();
   
   
+/*
+const A=50;
+const B=60;
+
+function Grandparent(){
+  const GrandparentName="Rameshwar";
+  // console.log(GrandparentName);
+  // console.log("Grandparent",A);
+  // console.log("Grandparent",B);
+  
 
 
+  function parent(){
+    const parentName="Jagdish";
+    // console.log(parentName);
+    // console.log("parent",A);
+    // console.log("parent",B);
+  
+    function Grandchild(){
+      const GrandchildName="Shikhar";
+      // console.log(GrandchildName);
+      console.log("Grandchild",A);
+      console.log("Grandchild",B);
+    }
 
+Grandchild();
+  }
+  parent();
+}
+Grandparent();
+*/
 
 
 
