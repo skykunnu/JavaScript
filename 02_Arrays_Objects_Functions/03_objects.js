@@ -33,6 +33,36 @@ const Person = {
   ],
 };
 /* How to insert a value of a variable inside a object as a key */
-Person[key] = "shikhar@gmail.com"; // simply place the variable without quotes in square brackets.
-console.log(Person);
-console.log(Person["Person hobbies"]); // you cannot access variables separated by space with dot notation,So use bracket notation.
+Person[key=email] = "shikhar@gmail.com"; // simply place the variable without quotes in square brackets.
+// console.log(Person);
+// console.log(Person["Person hobbies"]); // you cannot access variables separated by space with dot notation,So use bracket notation.
+// console.log(Person.Person hobbies); // this will give you error. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
