@@ -45,11 +45,6 @@ Coding.forEach((item) => {
 // Map method--> It is used to create a new array by applying a provided function to each element of an existing array.
 const numbers = [1, 2, 3, 4];
 
-/* Using Simple function*/
-const square = function (number) {
-  return number + number;
-};
-
 /* Using arrow function*/
 
 const squareNumber = numbers.map((number, index) => {
