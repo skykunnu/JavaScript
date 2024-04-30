@@ -84,7 +84,7 @@ console.log(multiDArray[2][1]) // 3
 console.log(multiDArray[0][2]) // Undefined
 console.log(multiDArray[1][2]) // Undefined
 console.log(multiDArray[2][2]) // Undefined
-console.log(multiDArray[0][0]) 
+console.log(multiDArray[0][0]) // Shikhar 
 
 
 
