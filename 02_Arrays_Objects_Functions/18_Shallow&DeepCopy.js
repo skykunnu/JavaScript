@@ -14,14 +14,12 @@ let anotherFood=foodItems; // copying(refrencing) of object(foodItems) into new 
 
 // console.log(anotherFood.food1) // Panner Tikka 
 // console.log(foodItems.food1) // Panner Tikka 
-// Why both of them have same values? because both new & old variables are pointing to same memory location, That means change of values in any of them will reflect in both. 
-
+// Why both of them have same values? because both new & old variables are pointing to same memory location, That means changing of values in any of them will reflect in both. 
 
 // hence In above example we actually made a shallow copy.
 
 // To overcome shallow copying issue, let's have a look at how we can make deep copies of object and arrays without nested objects and arrays.
 /*
-
 // Object's Method:-
 
 1. Spread operator
