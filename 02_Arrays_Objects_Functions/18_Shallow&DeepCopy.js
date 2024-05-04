@@ -12,9 +12,10 @@ let anotherFood=foodItems; // copying(refrencing) of object(foodItems) into new 
 
 // anotherFood.food1="Panner Tikka"
 
-// Why both of them have same values? because both new & old variables are pointing to same memory location, meaning change of values in any of them reflects in both. 
 // console.log(anotherFood.food1) // Panner Tikka 
 // console.log(foodItems.food1) // Panner Tikka 
+// Why both of them have same values? because both new & old variables are pointing to same memory location, That means change of values in any of them will reflect in both. 
+
 
 // hence In above example we actually made a shallow copy.
 
