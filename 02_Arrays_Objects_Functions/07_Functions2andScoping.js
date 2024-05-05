@@ -12,6 +12,69 @@ function app() {
   console.log(mul(3, 3));
 }
 // app();
+
+//------------------------------------------------------------------------------------------------------------------------------
+// Higher Order functions- It is a function that takes one or more functions as an argument and return a function as a result.  
+
+function a(b){
+  console.dir(b)
+  return b()
+}
+
+// function sayHi(){
+//   console.log('Hiiiiiiiiiiiiiiiiiiiii')
+// }
+
+// callback function 
+a( function (){ // Anonymous function is a function that does not have a name.  
+     console.log('Hi !')
+   })
+
+
+
+
+const radius =[1,2,3]
+
+const area=function(radius){ 
+return Math.PI*radius*radius;
+}
+
+const diameter=function(radius){
+  return 2*radius;
+}
+
+const calculate=function(radius,logic){ // Higher order function with argument radius and a callback function logic.
+  const output=[]
+  for(let i=0;i<radius.length;i++){
+     output.push(logic(radius[i]))
+  } 
+
+  return output;
+}
+
+//callback functions with area and diameter as an arguments. 
+// console.log(calculate(radius,area)) 
+// console.log(calculate(radius,diameter))
+
+//---------------------------------------------------------------------------------------------------------
+// returning functions with closures.
+
+function outer(){
+  const a1=4
+  function parent(){
+    const b=6
+    function add(){ 
+      console.log(b+a1)
+    }
+    return add // add() will return undefined, 10 and it will form closures with parent() and outer() because it is using their variables a and a1.
+  }
+  return parent() // parent () will return add and no closures would be formed because it is not accessing its outer scope. 
+}
+
+const add1 = outer() // this outer() returns the add() because first it returns parent() and then parent returns add(), so eventually outer returns add. 
+
+
+
 //-----------------------------------------------------------------------------------------------------------------------------------
 
 // Lexical Scope- means the lexical Environment where the function is defined.
@@ -27,7 +90,7 @@ function myApp() {
   console.log(myVar);// value1 due to lexical concept.
   myFunc();
 }
-myApp();
+// myApp();
 //----------------------------------------------------------------------------------------------------------------------------
 /* block scope vs function scope */
 
@@ -96,19 +159,6 @@ function printDetails({ firstName, gender }) {
 }
 // printDetails(person);
 //-------------------------------------------------------------------
-// Callback function --> function mein as a input accept karke call karney ko hi callback function bolte hain.
-function myFunc(callback) {
-  /* now callback(notation to write, whenever callback func has to be used) is assigned with function,means function as a input accept kiya. */
-  console.log(callback); // this will print the whole function.
-  callback(); // here function is called, this process is known as callback function.
-}
-function myFunc2(name) {
-  console.log("inside my func2");
-  console.log(`your name is ${name}`); // As we have not passed the name, so therefore the output will be undefined or if we had passed the name, the name would be printed out. .
-}
-// myFunc(myFunc2); // passed function as an input argument.
-//--------------------------------------------------------------------
-
 // function returning function.
 
 /* function intitialize */
