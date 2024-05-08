@@ -13,3 +13,15 @@ const greetings=(name)=>{
 };
 
 greetings('Shikhar');
+
+
+
+
+
+
+
+
+
+
+
+

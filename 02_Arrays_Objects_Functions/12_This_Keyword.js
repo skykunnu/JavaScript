@@ -62,3 +62,47 @@ const func = person.checkThis;
 // func(); // As there is no calling context by default the output will be window object.
 
 console.log(person.checkThis()); // Output--> (Strict mode) for 1st log statement-->Person object, 2nd Log statement--> Undefined due to strict mode and for own 64th line--> undefined becoz , Since there is no explicit return value, method implicitly returns undefined. (Non-Strict mode)--> 1st log--> person object ,2nd Log--> Windows object and 64th line log--> undefined becoz of no return value by method.
+
+
+// Inside a Arrow function 
+
+// Arrow function don't have 'this' binding--> Meaning the value of 'this' is lexically scoped. This means that value of 'this' inside an arrow function
+// is determined by the surrounding scope (the context in which the arrow function is defined).
+
+const person1={
+  name:'Shikhar',
+  skills:['HTML','CSS','JavaScript'],
+
+showskills(){
+  this.skills.forEach(skill=>{
+    console.log(`${this.name} is skilled in ${skill}`)
+  });
+}
+};
+
+person1.showskills(); // Shikhar is skilled in HTML
+// Shikhar is skilled in CSS
+// Shikhar is skilled in JavaScript
+
+
+
+// In above code 'this' keyword refers to the object (person) from which you define the function and showSkills is defined as a regular function and they have their own this context.
+
+
+const person2={
+  name:'Shikhar',
+  skills:['HTML','CSS','JavaScript'],
+
+showskills:()=>{
+  this.skills.forEach(skill=>{
+    console.log(`${this.name} is skilled in ${skill}`)
+  });
+}
+};
+
+person2.showskills(); // undefined, error in reading.
+
+// In above code 'this' keyword will give undefined error because you have written showSKills() method as an arrow function.
+//(In this case 'this' keyword refers to the global object and there the skills property is undefined)
+
+
