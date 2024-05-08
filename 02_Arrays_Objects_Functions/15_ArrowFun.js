@@ -1,12 +1,15 @@
-// Arrow function with this keyword
-/* In case of arrow function this keyword acts differently , means it points to the outer environment object and outer environment object is Window object.  */
-const user = {
-  firstName: "Shikhar",
-  Age: 22,
-  about:() => {
-    console.log(this); // this will point to window object.
-    console.log(this.firstName, this.Age); // Undefined , Undefined.
-  }
+// Arrow Function 
+// It is one of the type of function in JS , which is more advanced and was introduced in ES6 version. 
+// It is basically declared like a function expression.
+// It is recommend to use when you are using short/single-line functions. 
+
+
+
+// Syntax
+
+const greetings=(name)=>{
+  console.log(`Hello,${name}`);
+
 };
-// user.about(); // No call ,apply or bind method can change the execution context of this keyword.
-console.log(user.about());
+
+greetings('Shikhar');
