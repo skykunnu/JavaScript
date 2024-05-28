@@ -15,7 +15,7 @@ for(let letter of user){
   console.log(letter) // it will print each every letter of user in a seperate line. 
 }
 
-
+console.log("------- -------- -------")
 // // ------------------------------------------------------------------------------------------------------------------------------------------
 // // For in loop --> It is a loop in js used to iterate over the enumerable properties of object. (enumerable- it means to iterate over items in collection)
 
@@ -49,12 +49,14 @@ const personKey=Object.keys(person) // It stores keys of object like(firstName,l
 const personValue=Object.values(person) // It stores values of object like('Shikhar','Khandelwal', and so on) 
 const personEnteries=Object.entries(person) // It stores the nested array of key and value. 
 
+// for(let key of personKey){
+//   console.log(person[key])
+// }
+
+
 for(let key of personKey){
   console.log(person[key])
 }
-
-
-
 
 
 
