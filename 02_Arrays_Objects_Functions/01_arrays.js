@@ -66,7 +66,7 @@ const myn1 = myArr.slice(1, 3); // prints the index value 1 and 2 and excludes 3
 const animals=['cat','dog','bear','elephant','fox']
 // const return_array=animals.splice(2,2);
 // console.log(return_array) // ['bear','elephant']
-  const return_array2=animals.splice(3,2,'lion','dear',100)
+  const return_array2=animals.splice(3,2,'lion','dear',100) // 3-> starting index, 2-> no of elements to be removed and 100 will also be included as it is part of the arguments.  
   // console.log(return_array2) // ['elephant','fox']
   // console.log(animals) //[ 'cat', 'dog', 'bear', 'lion', 'dear', 100 ] --> even though only two elements can be replaced but still 100 is also added to array.                                                                   
 // ================================================================================================================
