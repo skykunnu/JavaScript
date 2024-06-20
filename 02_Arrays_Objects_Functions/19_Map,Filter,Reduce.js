@@ -80,6 +80,14 @@ since, the function returns the value, so the value of accumulator for the next 
 accumulator=0
 currentValue=5
 since, the function returns the value, so the value of accumulator for the next iteration remains unchanged (0).
+
+Output->
+1
+2
+3
+4
+5
+
 */
 
 //-------------------------------------------------------------------------------------------------------------------------------
