@@ -92,11 +92,12 @@ Output->
 
 //-------------------------------------------------------------------------------------------------------------------------------
 
-// case-2 -> when there is no initial value and no return value. 
-// const sum=nums.reduce((accumulator,currentValue,index)=>{
-//     console.log(accumulator) 
-//     console.log(currentValue)
-// }); // Initial value is none. 
+// case-2 -> when there is no initial value and no return value.
+ 
+const sum=nums.reduce((accumulator,currentValue,index)=>{
+    console.log(accumulator) 
+    console.log(currentValue)
+}); // Initial value is none. 
 
 /*
 since there is no initial value, therefore the value of accumulator will be the first element of an array and the value of currentValue will be second element
