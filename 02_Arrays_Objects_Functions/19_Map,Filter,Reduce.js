@@ -21,7 +21,8 @@ const months=['Jan','Feb','March','April','May','June','July','Aug','Sept','Oct'
 const filteredMonth=months.filter(function(month,index,array){
 console.log(index,month);
 
-return month.startsWith('J'); // conditions. 
+return month.startsWith('J'); // condition.
 });
 
 console.log(filteredMonth) // It will have all those months whose name starts with J. 
+console.log(months) // ['Jan', 'Feb', 'March', 'April', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec']
