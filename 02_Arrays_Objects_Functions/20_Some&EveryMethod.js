@@ -20,6 +20,8 @@ const result=evenNumbers.some((num)=>{
 
 // console.log(result) // true, because for element 0 it will return true and break from the loop without traversing remaining elements. 
 
+
+// Every example
 const oddNumbers=[1,3,5,7,9]
 
 const result2=oddNumbers.every((num)=>{
