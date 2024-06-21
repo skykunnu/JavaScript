@@ -14,4 +14,11 @@ function multiply(a,b=1){
 
 //------------------------------------------------------------------------------------------------------------------------------------
 
-// Spread Operator-> It is powerful feature introduced by JS in ES6 version. It is generally used by arrays & object only. 
+// Spread Operator-> It is powerful feature introduced by JS in ES6 version. It is generally used by arrays & object only for manipulation purpose. 
+
+/* 
+
+
+
+
+*/
